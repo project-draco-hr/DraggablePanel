@@ -1,3 +1,6 @@
 {
-  return top;
+  final int topBound=getPaddingTop();
+  final int bottomBound=getHeight() - child.getHeight() - child.getPaddingBottom();
+  final int newTop=Math.min(Math.max(top,topBound),bottomBound);
+  return newTop;
 }
