@@ -1,0 +1,3 @@
+{
+  dragHelper=ViewDragHelper.create(this,1f,new DragHelperCallback());
+}

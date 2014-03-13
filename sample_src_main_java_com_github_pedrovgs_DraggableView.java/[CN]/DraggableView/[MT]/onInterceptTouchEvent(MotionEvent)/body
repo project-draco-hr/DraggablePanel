@@ -1,0 +1,8 @@
+{
+  final int action=MotionEventCompat.getActionMasked(ev);
+  if (action == MotionEvent.ACTION_CANCEL || action == MotionEvent.ACTION_UP) {
+    dragHelper.cancel();
+    return false;
+  }
+  return dragHelper.shouldInterceptTouchEvent(ev);
+}

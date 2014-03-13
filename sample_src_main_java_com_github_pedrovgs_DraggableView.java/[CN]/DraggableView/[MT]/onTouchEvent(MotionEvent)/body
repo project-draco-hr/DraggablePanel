@@ -1,0 +1,4 @@
+{
+  dragHelper.processTouchEvent(ev);
+  return true;
+}
