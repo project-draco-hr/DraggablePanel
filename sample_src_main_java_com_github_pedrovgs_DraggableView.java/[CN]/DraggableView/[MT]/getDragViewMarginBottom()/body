@@ -1,0 +1,3 @@
+{
+  return DRAG_VIEW_MARGIN_BOTTOM;
+}

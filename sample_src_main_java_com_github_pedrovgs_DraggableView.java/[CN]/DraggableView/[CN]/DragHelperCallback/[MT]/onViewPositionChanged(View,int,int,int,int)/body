@@ -1,5 +1,6 @@
 {
-  changeSecondViewAlpha();
   changeDragViewScale();
+  changeDragViewXPosition();
+  changeSecondViewAlpha();
   invalidate();
 }
