@@ -2,5 +2,6 @@
   changeDragViewScale();
   changeDragViewXPosition();
   changeSecondViewAlpha();
+  changeBackgroundAlpha();
   invalidate();
 }

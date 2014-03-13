@@ -1,0 +1,7 @@
+{
+  Drawable background=getBackground();
+  if (background != null) {
+    int newAlpha=(int)(100 * (1 - getVerticalDragOffset()));
+    background.setAlpha(newAlpha);
+  }
+}
