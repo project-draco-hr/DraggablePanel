@@ -1,0 +1,4 @@
+{
+  Log.d(LOGTAG,"minimize");
+  smoothSlideTo(SLIDE_BOTTOM);
+}
