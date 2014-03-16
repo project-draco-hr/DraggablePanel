@@ -1,4 +1,4 @@
 {
-  dragHelper.processTouchEvent(ev);
+  viewDragHelper.processTouchEvent(ev);
   return true;
 }
