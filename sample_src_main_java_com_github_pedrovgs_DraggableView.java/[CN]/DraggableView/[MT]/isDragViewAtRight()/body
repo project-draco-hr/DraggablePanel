@@ -1,0 +1,3 @@
+{
+  return dragView.getRight() >= (getWidth() - MINIMUN_DX_FOR_HORIZONTAL_DRAG);
+}

@@ -1,9 +1,3 @@
 {
   super.onViewReleased(releasedChild,xvel,yvel);
-  if (isHeaderAboveTheMiddle()) {
-    maximize();
-  }
- else {
-    minimize();
-  }
 }

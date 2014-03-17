@@ -1,7 +1,12 @@
 {
-  changeDragViewScale();
-  changeDragViewXPosition();
-  changeSecondViewAlpha();
-  changeBackgroundAlpha();
+  if (isDragViewAtBottom()) {
+    super.onViewPositionChanged(changedView,left,top,dx,dy);
+  }
+ else {
+    changeDragViewScale();
+    changeDragViewXPosition();
+    changeSecondViewAlpha();
+    changeBackgroundAlpha();
+  }
   invalidate();
 }

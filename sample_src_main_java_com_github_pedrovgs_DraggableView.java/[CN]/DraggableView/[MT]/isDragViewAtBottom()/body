@@ -1,0 +1,5 @@
+{
+  Log.e("DEPURAR","TOP " + dragView.getTop());
+  Log.e("DEPURAR","HEIGHT - HEIGHT " + (getHeight() - dragView.getHeight()));
+  return dragView.getTop() == (getHeight() - dragView.getHeight());
+}
