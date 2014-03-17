@@ -1,8 +1,6 @@
 {
   int newLeft=0;
   if (((isMinimized() && (dx > MINIMUN_DX_FOR_HORIZONTAL_DRAG || dx < -MINIMUN_DX_FOR_HORIZONTAL_DRAG))) || (isDragViewAtBottom())) {
-    Log.e("DEPURAR","-> LEFT " + left);
-    Log.e("DEPURAR","-> dx " + dx);
     newLeft=left;
   }
   return newLeft;
