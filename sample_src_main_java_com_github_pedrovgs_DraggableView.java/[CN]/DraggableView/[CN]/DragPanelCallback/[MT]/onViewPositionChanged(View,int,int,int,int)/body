@@ -1,6 +1,6 @@
 {
   if (isDragViewAtBottom()) {
-    super.onViewPositionChanged(changedView,left,top,dx,dy);
+    changeDragViewViewAlpha();
   }
  else {
     changeDragViewScale();
