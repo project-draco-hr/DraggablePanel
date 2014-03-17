@@ -9,5 +9,14 @@
     }
   }
  else {
+    if (isNextToLeftBound()) {
+      closeToLeft();
+    }
+ else     if (isNextToRightBound()) {
+      closeToRight();
+    }
+ else {
+      minimize();
+    }
   }
 }

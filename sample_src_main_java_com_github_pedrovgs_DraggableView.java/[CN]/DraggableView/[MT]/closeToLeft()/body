@@ -1,0 +1,5 @@
+{
+  if (viewDragHelper.smoothSlideViewTo(dragView,-dragView.getWidth(),getHeight() - dragView.getHeight())) {
+    ViewCompat.postInvalidateOnAnimation(this);
+  }
+}
