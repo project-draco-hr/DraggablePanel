@@ -1,0 +1,5 @@
+{
+  if (topFragment == null || bottomFragment == null) {
+    throw new IllegalStateException("You have to set top and bottom fragment before initialize DraggablePanel");
+  }
+}

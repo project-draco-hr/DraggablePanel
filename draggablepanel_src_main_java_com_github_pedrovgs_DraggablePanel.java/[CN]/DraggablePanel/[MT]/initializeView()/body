@@ -1,3 +1,9 @@
 {
+  checkFragmentConsistency();
+  checkSupportFragmentmanagerConsistency();
   inflate(getContext(),R.layout.draggable_panel,this);
+  DraggableView draggableView=(DraggableView)findViewById(R.id.draggableView);
+  draggableView.setFragmentManager(fragmentManager);
+  draggableView.attachTopFragment(topFragment);
+  draggableView.attachBottomFragment(bottomFragment);
 }

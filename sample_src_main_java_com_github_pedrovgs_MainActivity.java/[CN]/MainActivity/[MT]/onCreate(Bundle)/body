@@ -1,4 +1,9 @@
 {
   super.onCreate(savedInstanceState);
   setContentView(R.layout.activity_main);
+  DraggablePanel draggablePanel=(DraggablePanel)findViewById(R.id.draggablePanel);
+  draggablePanel.setFragmentManager(getSupportFragmentManager());
+  draggablePanel.setTopFragment(new RedFragment());
+  draggablePanel.setBottomFragment(new BlackFragment());
+  draggablePanel.initializeView();
 }

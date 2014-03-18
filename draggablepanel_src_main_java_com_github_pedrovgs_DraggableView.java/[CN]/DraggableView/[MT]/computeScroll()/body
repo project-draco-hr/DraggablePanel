@@ -1,5 +1,5 @@
 {
-  if (viewDragHelper.continueSettling(true)) {
+  if (!isInEditMode() && viewDragHelper.continueSettling(true)) {
     ViewCompat.postInvalidateOnAnimation(this);
   }
 }

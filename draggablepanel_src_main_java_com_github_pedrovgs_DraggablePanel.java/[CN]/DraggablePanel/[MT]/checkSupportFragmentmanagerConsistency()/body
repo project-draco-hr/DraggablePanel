@@ -1,0 +1,5 @@
+{
+  if (fragmentManager == null) {
+    throw new IllegalStateException("You have to set the support FragmentManager before initialize DraggablePanel");
+  }
+}
