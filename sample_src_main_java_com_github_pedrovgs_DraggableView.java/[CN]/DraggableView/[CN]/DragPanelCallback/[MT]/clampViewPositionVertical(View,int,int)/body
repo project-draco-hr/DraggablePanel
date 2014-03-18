@@ -1,5 +1,5 @@
 {
-  int newTop=0;
+  int newTop;
   if (isMinimized() && (dy >= MINIMUM_DY_FOR_VERTICAL_DRAG || dy >= -MINIMUM_DY_FOR_VERTICAL_DRAG) || (!isMinimized() && !isDragViewAtBottom())) {
     final int topBound=getPaddingTop();
     final int bottomBound=getHeight() - child.getHeight() - child.getPaddingBottom();

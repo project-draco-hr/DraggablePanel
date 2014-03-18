@@ -1,8 +1,25 @@
 {
   final int action=MotionEventCompat.getActionMasked(ev);
+  Log.d(LOGTAG,"onInterceptTouchEvent " + action);
+  if ((action != MotionEvent.ACTION_DOWN)) {
+    Log.d(LOGTAG,"ACTION_DOWN");
+    viewDragHelper.cancel();
+    return super.onInterceptTouchEvent(ev);
+  }
   if (action == MotionEvent.ACTION_CANCEL || action == MotionEvent.ACTION_UP) {
+    Log.d(LOGTAG,"ACTION_CANCEL || ACTION_UP");
     viewDragHelper.cancel();
     return false;
   }
-  return viewDragHelper.shouldInterceptTouchEvent(ev);
+  final float x=ev.getX();
+  final float y=ev.getY();
+  boolean interceptTap=false;
+switch (action) {
+case MotionEvent.ACTION_DOWN:
+    interceptTap=viewDragHelper.isViewUnder(dragView,(int)x,(int)y);
+  break;
+case MotionEvent.ACTION_MOVE:
+interceptTap=false;
+}
+return viewDragHelper.shouldInterceptTouchEvent(ev) || interceptTap;
 }

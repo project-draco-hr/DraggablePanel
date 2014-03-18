@@ -1,4 +1,14 @@
 {
+  Log.d(LOGTAG,"onTouchEvent");
   viewDragHelper.processTouchEvent(ev);
+  boolean dragViewTouched=isViewHit(dragView,(int)ev.getX(),(int)ev.getY()) && ev.getAction() == MotionEvent.ACTION_UP && lastActionMotionEvent != MotionEvent.ACTION_MOVE;
+  if (dragViewTouched) {
+    dragView.performClick();
+  }
+  boolean secondViewTouched=isViewHit(secondView,(int)ev.getX(),(int)ev.getY()) && ev.getAction() == MotionEvent.ACTION_UP && lastActionMotionEvent != MotionEvent.ACTION_MOVE;
+  if (secondViewTouched && !dragViewTouched) {
+    secondView.performClick();
+  }
+  lastActionMotionEvent=ev.getAction();
   return true;
 }
