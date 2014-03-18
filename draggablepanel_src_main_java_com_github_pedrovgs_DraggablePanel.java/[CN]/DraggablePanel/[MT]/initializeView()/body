@@ -1,0 +1,3 @@
+{
+  inflate(getContext(),R.layout.draggable_panel,this);
+}
