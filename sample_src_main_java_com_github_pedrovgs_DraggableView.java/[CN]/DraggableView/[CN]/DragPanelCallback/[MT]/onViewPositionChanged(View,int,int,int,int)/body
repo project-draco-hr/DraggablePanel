@@ -4,8 +4,9 @@
   }
  else {
     changeDragViewScale();
-    changeDragViewXPosition();
+    changeDragViewPosition();
     changeSecondViewAlpha();
+    changeSeondViewPosition();
     changeBackgroundAlpha();
   }
   invalidate();

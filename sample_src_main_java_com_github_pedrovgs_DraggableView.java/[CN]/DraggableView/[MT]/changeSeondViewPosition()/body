@@ -1,0 +1,3 @@
+{
+  ViewHelper.setY(secondView,dragView.getTop() + dragView.getHeight());
+}
