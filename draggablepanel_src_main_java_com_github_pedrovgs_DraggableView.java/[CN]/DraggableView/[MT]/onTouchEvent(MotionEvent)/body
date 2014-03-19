@@ -3,11 +3,12 @@
   viewDragHelper.processTouchEvent(ev);
   boolean dragViewTouched=isViewHit(dragView,(int)ev.getX(),(int)ev.getY()) && ev.getAction() == MotionEvent.ACTION_UP && lastActionMotionEvent != MotionEvent.ACTION_MOVE;
   if (dragViewTouched) {
-    dragView.performClick();
+    propagateTouchEventToChildViews(dragView);
+    return false;
   }
   boolean secondViewTouched=isViewHit(secondView,(int)ev.getX(),(int)ev.getY()) && ev.getAction() == MotionEvent.ACTION_UP && lastActionMotionEvent != MotionEvent.ACTION_MOVE;
   if (secondViewTouched && !dragViewTouched) {
-    secondView.performClick();
+    propagateTouchEventToChildViews(secondView);
   }
   lastActionMotionEvent=ev.getAction();
   return true;

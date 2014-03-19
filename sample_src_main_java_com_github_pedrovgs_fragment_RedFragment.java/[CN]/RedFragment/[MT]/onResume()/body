@@ -1,0 +1,9 @@
+{
+  super.onResume();
+  getView().setOnClickListener(new View.OnClickListener(){
+    @Override public void onClick(    View view){
+      Toast.makeText(getActivity(),"Click on red fragment",Toast.LENGTH_SHORT).show();
+    }
+  }
+);
+}
