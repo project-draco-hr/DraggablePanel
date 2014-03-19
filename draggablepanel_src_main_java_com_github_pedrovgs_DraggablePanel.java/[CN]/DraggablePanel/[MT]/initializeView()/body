@@ -10,5 +10,6 @@
   setBackground(null);
   draggableView.setScaleFactor(scaleFactor);
   draggableView.setTopFragmentMarginRight(topFragmentMarginRight);
+  draggableView.setTopFragmentMarginBottom(topFragmentMarginBottom);
   draggableView.attachBottomFragment(bottomFragment);
 }
