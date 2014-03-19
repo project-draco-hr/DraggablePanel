@@ -1,5 +1,5 @@
 {
   LayoutParams layoutParams=(LayoutParams)dragView.getLayoutParams();
-  layoutParams.height=topFragmentHeight;
+  layoutParams.height=(int)topFragmentHeight;
   dragView.setLayoutParams(layoutParams);
 }

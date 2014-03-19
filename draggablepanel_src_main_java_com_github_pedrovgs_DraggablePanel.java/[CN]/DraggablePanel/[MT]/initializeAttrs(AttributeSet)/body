@@ -1,0 +1,4 @@
+{
+  TypedArray attributes=getContext().obtainStyledAttributes(attrs,R.styleable.draggable_panel);
+  this.topFragmentHeight=attributes.getDimension(R.styleable.draggable_panel_top_fragment_height,DEFAULT_TOP_FRAGMENT_HEIGHT);
+}
