@@ -1,3 +1,0 @@
-{
-  return RIGHT_DIRECTION ? 1 : 0;
-}

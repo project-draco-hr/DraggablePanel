@@ -1,8 +1,3 @@
 {
-  if (RIGHT_DIRECTION) {
-    return (dragView.getRight() - getDragViewMarginRight()) < getWidth() / 2;
-  }
- else {
-    return (dragView.getLeft() - getDragViewMarginRight()) > getWidth() / 2;
-  }
+  return (dragView.getRight() - getDragViewMarginRight()) < getWidth() / 2;
 }
