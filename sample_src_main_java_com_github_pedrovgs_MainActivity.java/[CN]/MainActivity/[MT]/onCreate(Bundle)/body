@@ -6,7 +6,6 @@
   draggablePanel.setTopFragment(new RedFragment());
   draggablePanel.setBottomFragment(new BlackFragment());
   draggablePanel.setBackgroundColor(getResources().getColor(R.color.black));
-  draggablePanel.setTopFragmentMarginRight(getResources().getDimension(R.dimen.top_fragment_margin));
   draggablePanel.setTopFragmentMarginBottom(getResources().getDimension(R.dimen.top_fragment_margin));
   draggablePanel.initializeView();
 }
