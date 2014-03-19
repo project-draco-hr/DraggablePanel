@@ -3,6 +3,5 @@
   if (!isInEditMode()) {
     dragView=findViewById(R.id.dragView);
     secondView=findViewById(R.id.secondView);
-    hookListeners();
   }
 }
