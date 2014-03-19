@@ -1,15 +1,15 @@
 {
-  Log.d(LOGTAG,"onTouchEvent");
   viewDragHelper.processTouchEvent(ev);
-  boolean dragViewTouched=isViewHit(dragView,(int)ev.getX(),(int)ev.getY()) && ev.getAction() == MotionEvent.ACTION_UP && lastActionMotionEvent != MotionEvent.ACTION_MOVE;
-  if (dragViewTouched) {
-    propagateTouchEventToChildViews(dragView);
-    return false;
+  final float x=ev.getX();
+  final float y=ev.getY();
+  boolean isHeaderViewUnder=viewDragHelper.isViewUnder(dragView,(int)x,(int)y);
+  boolean isHeaderViewHit=isViewHit(dragView,(int)x,(int)y);
+  boolean isDescViewHit=isViewHit(secondView,(int)x,(int)y);
+  if (isHeaderViewHit && isHeaderViewUnder && ev.getAction() == MotionEvent.ACTION_UP) {
+    dragView.performClick();
   }
-  boolean secondViewTouched=isViewHit(secondView,(int)ev.getX(),(int)ev.getY()) && ev.getAction() == MotionEvent.ACTION_UP && lastActionMotionEvent != MotionEvent.ACTION_MOVE;
-  if (secondViewTouched && !dragViewTouched) {
-    propagateTouchEventToChildViews(secondView);
+  for (int i=0; i < dragView.getChildCount(); i++) {
+    dragView.getChildAt(i).dispatchTouchEvent(ev);
   }
-  lastActionMotionEvent=ev.getAction();
-  return true;
+  return isHeaderViewUnder && isHeaderViewHit || isDescViewHit;
 }
