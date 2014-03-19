@@ -5,9 +5,6 @@
   boolean isHeaderViewUnder=viewDragHelper.isViewUnder(dragView,(int)x,(int)y);
   boolean isHeaderViewHit=isViewHit(dragView,(int)x,(int)y);
   boolean isDescViewHit=isViewHit(secondView,(int)x,(int)y);
-  if (isHeaderViewHit && isHeaderViewUnder && ev.getAction() == MotionEvent.ACTION_UP) {
-    dragView.performClick();
-  }
   for (int i=0; i < dragView.getChildCount(); i++) {
     dragView.getChildAt(i).dispatchTouchEvent(ev);
   }
