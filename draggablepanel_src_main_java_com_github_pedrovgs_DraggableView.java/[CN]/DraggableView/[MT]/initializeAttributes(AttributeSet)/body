@@ -1,0 +1,5 @@
+{
+  TypedArray attributes=getContext().obtainStyledAttributes(attrs,R.styleable.draggable_view);
+  this.dragViewId=attributes.getResourceId(R.styleable.draggable_view_top_view_id,R.id.dragView);
+  this.secondViewId=attributes.getResourceId(R.styleable.draggable_view_bottom_view_id,R.id.secondView);
+}

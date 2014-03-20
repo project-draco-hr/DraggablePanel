@@ -1,7 +1,7 @@
 {
   super.onFinishInflate();
   if (!isInEditMode()) {
-    dragView=(ViewGroup)findViewById(R.id.dragView);
-    secondView=(ViewGroup)findViewById(R.id.secondView);
+    dragView=(ViewGroup)findViewById(dragViewId);
+    secondView=(ViewGroup)findViewById(secondViewId);
   }
 }
