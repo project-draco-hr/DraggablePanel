@@ -1,5 +1,6 @@
 {
   viewDragHelper.processTouchEvent(ev);
+  int action=ev.getAction();
   final float x=ev.getX();
   final float y=ev.getY();
   boolean isHeaderViewUnder=viewDragHelper.isViewUnder(dragView,(int)x,(int)y);
@@ -11,5 +12,9 @@
       viewGroup.getChildAt(i).dispatchTouchEvent(ev);
     }
   }
+ else   if (action == MotionEvent.ACTION_UP && lastActionMotionEvent != MotionEvent.ACTION_MOVE) {
+    dragView.performClick();
+  }
+  lastActionMotionEvent=action;
   return isHeaderViewUnder && isHeaderViewHit || isDescViewHit;
 }
