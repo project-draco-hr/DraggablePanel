@@ -2,4 +2,9 @@
   super.onCreate(savedInstanceState);
   setContentView(R.layout.activity_video_sample);
   ButterKnife.inject(this);
+  Uri path=Uri.parse(APPLICATION_RAW_PATH + R.raw.video);
+  MediaController mediaController=new MediaController(this);
+  video_view.setMediaController(mediaController);
+  video_view.setVideoURI(path);
+  video_view.start();
 }
