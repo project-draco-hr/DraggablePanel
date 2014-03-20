@@ -5,8 +5,11 @@
   boolean isHeaderViewUnder=viewDragHelper.isViewUnder(dragView,(int)x,(int)y);
   boolean isHeaderViewHit=isViewHit(dragView,(int)x,(int)y);
   boolean isDescViewHit=isViewHit(secondView,(int)x,(int)y);
-  for (int i=0; i < dragView.getChildCount(); i++) {
-    dragView.getChildAt(i).dispatchTouchEvent(ev);
+  if (dragView instanceof ViewGroup) {
+    ViewGroup viewGroup=(ViewGroup)dragView;
+    for (int i=0; i < viewGroup.getChildCount(); i++) {
+      viewGroup.getChildAt(i).dispatchTouchEvent(ev);
+    }
   }
   return isHeaderViewUnder && isHeaderViewHit || isDescViewHit;
 }
