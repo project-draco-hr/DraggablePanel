@@ -10,4 +10,5 @@
     changeBackgroundAlpha();
   }
   invalidate();
+  notifyPositionChangedToListener(left,top,dx,dy);
 }

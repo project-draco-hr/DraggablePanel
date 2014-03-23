@@ -1,0 +1,5 @@
+{
+  if (listener != null) {
+    listener.onDraggableViewPositionChanged(left,top,dx,dy);
+  }
+}
