@@ -1,6 +1,6 @@
 {
   draggablePanel.setFragmentManager(getSupportFragmentManager());
   draggablePanel.setTopFragment(youtubeFragment);
-  draggablePanel.setBottomFragment(new RedFragment());
+  draggablePanel.setBottomFragment(new CityFragment());
   draggablePanel.initializeView();
 }

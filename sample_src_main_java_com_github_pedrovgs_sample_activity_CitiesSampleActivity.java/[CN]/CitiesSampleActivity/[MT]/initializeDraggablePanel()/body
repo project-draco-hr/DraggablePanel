@@ -1,6 +1,6 @@
 {
   draggablePanel.setFragmentManager(getSupportFragmentManager());
-  draggablePanel.setTopFragment(new RedFragment());
+  draggablePanel.setTopFragment(cityFragment);
   draggablePanel.setBottomFragment(new BlackFragment());
   draggablePanel.setScaleFactor(getResources().getInteger(R.integer.scale_factor));
   draggablePanel.setTopViewHeight(getResources().getDimension(R.dimen.top_fragment_height));
