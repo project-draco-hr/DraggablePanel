@@ -1,3 +1,7 @@
 {
-  ViewHelper.setAlpha(dragView,1 - getHorizontalDragOffset());
+  float alpha=1 - getHorizontalDragOffset();
+  if (alpha == 0) {
+    alpha=1;
+  }
+  ViewHelper.setAlpha(dragView,alpha);
 }
