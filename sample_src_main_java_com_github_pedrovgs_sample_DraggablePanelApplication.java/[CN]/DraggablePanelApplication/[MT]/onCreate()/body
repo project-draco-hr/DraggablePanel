@@ -1,0 +1,7 @@
+{
+  super.onCreate();
+  MainModule mainModule=new MainModule(getBaseContext());
+  objectGraph=ObjectGraph.create(mainModule);
+  objectGraph.inject(this);
+  objectGraph.injectStatics();
+}

@@ -1,3 +1,0 @@
-{
-  Toast.makeText(this,"View container clicked",Toast.LENGTH_SHORT).show();
-}

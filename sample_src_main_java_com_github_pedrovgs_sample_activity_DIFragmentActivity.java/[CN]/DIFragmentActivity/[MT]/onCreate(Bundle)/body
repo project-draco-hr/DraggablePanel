@@ -1,0 +1,4 @@
+{
+  super.onCreate(savedInstanceState);
+  ((DraggablePanelApplication)getApplication()).inject(this);
+}

@@ -3,4 +3,5 @@
   setContentView(R.layout.activity_simple_sample);
   ButterKnife.inject(this);
   initializeDraggablePanel();
+  initializeListView();
 }
