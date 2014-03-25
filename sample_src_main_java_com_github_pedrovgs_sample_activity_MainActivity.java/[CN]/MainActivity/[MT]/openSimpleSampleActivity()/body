@@ -1,4 +1,4 @@
 {
-  Intent intent=new Intent(this,CitiesSampleActivity.class);
+  Intent intent=new Intent(this,PlacesSampleActivity.class);
   startActivity(intent);
 }

@@ -1,0 +1,3 @@
+{
+  return layoutInflater.inflate(R.layout.place_row,viewGroup,false);
+}

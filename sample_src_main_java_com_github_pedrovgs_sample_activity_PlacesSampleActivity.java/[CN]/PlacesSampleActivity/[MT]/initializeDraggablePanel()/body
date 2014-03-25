@@ -1,0 +1,12 @@
+{
+  draggablePanel.setFragmentManager(getSupportFragmentManager());
+  draggablePanel.setTopFragment(placeFragment);
+  draggablePanel.setBottomFragment(new BlackFragment());
+  draggablePanel.setScaleFactor(getResources().getInteger(R.integer.scale_factor));
+  draggablePanel.setTopViewHeight(getResources().getDimension(R.dimen.top_fragment_height));
+  draggablePanel.setTopFragmentMarginRight(getResources().getDimension(R.dimen.top_fragment_margin));
+  draggablePanel.setTopFragmentMarginBottom(getResources().getDimension(R.dimen.top_fragment_margin));
+  draggablePanel.setBackgroundColor(getResources().getColor(R.color.black));
+  draggablePanel.initializeView();
+  draggablePanel.setVisibility(View.GONE);
+}
