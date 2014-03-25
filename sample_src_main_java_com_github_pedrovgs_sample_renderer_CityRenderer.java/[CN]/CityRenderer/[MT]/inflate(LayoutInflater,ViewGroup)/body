@@ -1,0 +1,3 @@
+{
+  return layoutInflater.inflate(R.layout.city_row,viewGroup,false);
+}

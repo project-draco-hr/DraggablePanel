@@ -1,0 +1,3 @@
+{
+  return CityRenderer.class;
+}

@@ -1,0 +1,5 @@
+{
+  List<Renderer<CityViewModel>> prototypes=new LinkedList<Renderer<CityViewModel>>();
+  prototypes.add(new CityRenderer(context));
+  return new CityCollectionRendererBuilder(prototypes);
+}

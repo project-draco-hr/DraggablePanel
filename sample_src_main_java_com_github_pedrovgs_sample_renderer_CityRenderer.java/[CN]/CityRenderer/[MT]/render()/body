@@ -1,0 +1,5 @@
+{
+  CityViewModel city=getContent();
+  tv_name.setText(city.getName());
+  Picasso.with(context).load(city.getPhoto()).placeholder(R.drawable.maps_placeholder).into(iv_photo);
+}

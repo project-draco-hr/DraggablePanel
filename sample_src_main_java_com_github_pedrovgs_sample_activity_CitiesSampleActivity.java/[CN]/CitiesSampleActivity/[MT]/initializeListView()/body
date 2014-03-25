@@ -1,2 +1,3 @@
 {
+  lv_cities.setAdapter(citiesAdapter);
 }
