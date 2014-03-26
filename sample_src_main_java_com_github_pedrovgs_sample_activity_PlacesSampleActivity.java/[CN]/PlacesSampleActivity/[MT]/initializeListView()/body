@@ -9,7 +9,7 @@
       mapFragment.getMap().clear();
       LatLng latitudeLongitude=new LatLng(placeViewModel.getLatitude(),placeViewModel.getLongitude());
       mapFragment.getMap().addMarker(new MarkerOptions().position(latitudeLongitude));
-      mapFragment.getMap().moveCamera(CameraUpdateFactory.newLatLng(latitudeLongitude));
+      mapFragment.getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(latitudeLongitude,10f));
     }
   }
 );
