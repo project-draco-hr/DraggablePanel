@@ -2,7 +2,10 @@
   draggablePanel.setFragmentManager(getSupportFragmentManager());
   draggablePanel.setTopFragment(placeFragment);
   draggablePanel.setBottomFragment(mapFragment);
-  draggablePanel.setScaleFactor(getResources().getInteger(R.integer.scale_factor));
+  TypedValue typedValue=new TypedValue();
+  getResources().getValue(R.dimen.scale_factor,typedValue,true);
+  float scaleFactor=typedValue.getFloat();
+  draggablePanel.setScaleFactor(scaleFactor);
   draggablePanel.setTopViewHeight(getResources().getDimension(R.dimen.top_fragment_height));
   draggablePanel.setTopFragmentMarginRight(getResources().getDimension(R.dimen.top_fragment_margin));
   draggablePanel.setTopFragmentMarginBottom(getResources().getDimension(R.dimen.top_fragment_margin));
