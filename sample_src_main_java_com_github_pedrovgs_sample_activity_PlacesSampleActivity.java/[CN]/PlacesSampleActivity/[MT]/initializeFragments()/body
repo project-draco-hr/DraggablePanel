@@ -1,13 +1,5 @@
 {
   placeFragment=new PlaceFragment();
-  mapFragment=new SupportMapFragment(){
-    @Override public void onActivityCreated(    Bundle savedInstanceState){
-      super.onActivityCreated(savedInstanceState);
-      GoogleMap map=mapFragment.getMap();
-      if (map != null) {
-        map.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
-      }
-    }
-  }
-;
+  GoogleMapOptions options=new GoogleMapOptions();
+  mapFragment=SupportMapFragment.newInstance(options);
 }
