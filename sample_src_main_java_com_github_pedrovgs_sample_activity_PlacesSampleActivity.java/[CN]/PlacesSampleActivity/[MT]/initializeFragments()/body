@@ -1,3 +1,12 @@
 {
   placeFragment=new PlaceFragment();
+  mapFragment=new SupportMapFragment(){
+    @Override public void onActivityCreated(    Bundle savedInstanceState){
+      super.onActivityCreated(savedInstanceState);
+      GoogleMap map=mapFragment.getMap();
+      if (map != null) {
+      }
+    }
+  }
+;
 }
