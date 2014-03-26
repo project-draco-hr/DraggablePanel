@@ -5,6 +5,7 @@
       super.onActivityCreated(savedInstanceState);
       GoogleMap map=mapFragment.getMap();
       if (map != null) {
+        map.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
       }
     }
   }
