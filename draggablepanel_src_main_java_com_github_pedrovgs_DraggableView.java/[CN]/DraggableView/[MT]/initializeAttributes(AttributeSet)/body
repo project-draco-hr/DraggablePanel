@@ -3,7 +3,8 @@
   this.dragViewId=attributes.getResourceId(R.styleable.draggable_view_top_view_id,R.id.dragView);
   this.secondViewId=attributes.getResourceId(R.styleable.draggable_view_bottom_view_id,R.id.secondView);
   this.topViewHeight=attributes.getDimension(R.styleable.draggable_view_top_view_height,DEFAULT_TOP_VIEW_HEIGHT);
-  this.scaleFactor=attributes.getFloat(R.styleable.draggable_view_top_view_scale_factor,DEFAULT_SCALE_FACTOR);
+  this.xScaleFactor=attributes.getFloat(R.styleable.draggable_view_top_view_x_scale_factor,DEFAULT_SCALE_FACTOR);
+  this.yScaleFactor=attributes.getFloat(R.styleable.draggable_view_top_view_y_scale_factor,DEFAULT_SCALE_FACTOR);
   this.topFragmentMarginRight=attributes.getDimension(R.styleable.draggable_view_top_view_margin_right,DEFAULT_TOP_FRAGMENT_MARGIN);
   this.topFragmentMarginBottom=attributes.getDimension(R.styleable.draggable_view_top_view_margin_bottom,DEFAULT_TOP_FRAGMENT_MARGIN);
 }
