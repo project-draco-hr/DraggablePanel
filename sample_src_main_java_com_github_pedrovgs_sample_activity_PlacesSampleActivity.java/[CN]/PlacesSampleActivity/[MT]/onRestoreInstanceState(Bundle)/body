@@ -1,0 +1,5 @@
+{
+  super.onRestoreInstanceState(savedInstanceState);
+  recoverDraggablePanelState(savedInstanceState);
+  loadLastVideoLoaded(savedInstanceState);
+}

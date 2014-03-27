@@ -1,0 +1,13 @@
+{
+  draggablePanel.setVisibility(View.VISIBLE);
+  draggablePanel.maximize();
+  PlaceViewModel placeViewModel=placesAdapter.getItem(position);
+  placeFragment.showPlace(placeViewModel);
+  mapFragment.getMap().clear();
+  LatLng latitudeLongitude=new LatLng(placeViewModel.getLatitude(),placeViewModel.getLongitude());
+  MarkerOptions marker=new MarkerOptions().position(latitudeLongitude);
+  marker.title(placeViewModel.getName());
+  marker.snippet(placeViewModel.getLatitude() + " , " + placeViewModel.getLongitude());
+  mapFragment.getMap().addMarker(marker);
+  mapFragment.getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(latitudeLongitude,10f));
+}
