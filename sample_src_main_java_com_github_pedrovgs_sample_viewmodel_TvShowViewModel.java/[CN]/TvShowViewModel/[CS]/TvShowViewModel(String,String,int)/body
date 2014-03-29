@@ -1,0 +1,6 @@
+{
+  this.title=title;
+  this.thumbnail=thumbnail;
+  this.numberOfSeasons=numberOfSeasons;
+  this.episodes=new LinkedList<EpisodeViewModel>();
+}
