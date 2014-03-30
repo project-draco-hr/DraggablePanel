@@ -1,4 +1,5 @@
 {
   Log.d(LOGTAG,"maximize");
   smoothSlideTo(SLIDE_TOP);
+  notifyMaximizeToListener();
 }

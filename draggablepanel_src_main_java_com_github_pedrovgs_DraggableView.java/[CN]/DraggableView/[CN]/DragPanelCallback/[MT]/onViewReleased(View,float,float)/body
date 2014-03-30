@@ -19,5 +19,4 @@
       minimize();
     }
   }
-  notifyViewReleasedToListener(xvel,yvel);
 }
