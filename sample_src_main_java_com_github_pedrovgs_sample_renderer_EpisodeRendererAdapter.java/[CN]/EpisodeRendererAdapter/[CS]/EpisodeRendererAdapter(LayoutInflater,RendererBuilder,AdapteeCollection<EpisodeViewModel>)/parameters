@@ -1,0 +1,3 @@
+LayoutInflater layoutInflater
+RendererBuilder rendererBuilder
+AdapteeCollection<EpisodeViewModel> collection

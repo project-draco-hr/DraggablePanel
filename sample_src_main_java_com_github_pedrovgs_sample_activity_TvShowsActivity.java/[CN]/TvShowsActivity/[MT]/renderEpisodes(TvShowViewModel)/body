@@ -2,6 +2,6 @@
   List<Renderer<EpisodeViewModel>> episodeRenderers=new LinkedList<Renderer<EpisodeViewModel>>();
   episodeRenderers.add(new EpisodeRenderer(this));
   EpisodeRendererBuilder episodeRendererBuilder=new EpisodeRendererBuilder(episodeRenderers);
-  RendererAdapter<EpisodeViewModel> episodesAdapter=new RendererAdapter<EpisodeViewModel>(getLayoutInflater(),episodeRendererBuilder,tvShow.getEpisodes());
+  EpisodeRendererAdapter episodesAdapter=new EpisodeRendererAdapter(getLayoutInflater(),episodeRendererBuilder,tvShow.getEpisodes());
   lv_episodes.setAdapter(episodesAdapter);
 }
