@@ -3,5 +3,5 @@
   this.poster=poster;
   this.fanArt=fanArt;
   this.numberOfSeasons=numberOfSeasons;
-  this.episodes=new LinkedList<EpisodeViewModel>();
+  this.episodes=new EpisodeCollection();
 }
