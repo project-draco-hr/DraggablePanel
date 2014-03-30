@@ -3,7 +3,7 @@
   handler.postDelayed(new Runnable(){
     @Override public void run(){
       draggableView.setVisibility(View.GONE);
-      draggableView.minimize();
+      draggableView.closeToRight();
     }
   }
 ,10);

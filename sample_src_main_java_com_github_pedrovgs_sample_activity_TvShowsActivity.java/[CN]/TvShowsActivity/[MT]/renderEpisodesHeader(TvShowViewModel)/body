@@ -1,0 +1,7 @@
+{
+  lv_episodes.removeHeaderView(header);
+  header=(TextView)getLayoutInflater().inflate(R.layout.episode_header,null);
+  header.setText(tvShow.getTitle().toUpperCase() + " - SEASON 1");
+  lv_episodes.setAdapter(null);
+  lv_episodes.addHeaderView(header);
+}
