@@ -1,2 +1,5 @@
 {
+  EpisodeViewModel episode=getContent();
+  tv_episode_title.setText(episode.getTitle());
+  tv_episode_publish_date.setText(episode.getPublishDate());
 }
