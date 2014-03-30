@@ -2,5 +2,6 @@
   super.onCreate(savedInstanceState);
   setContentView(R.layout.activity_tv_shows_sample);
   ButterKnife.inject(this);
-  gv_tv_shows.setAdapter(adapter);
+  initializeDraggableView();
+  initializeGridView();
 }
