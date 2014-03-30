@@ -1,3 +1,4 @@
 String title
-String thumbnail
+String poster
+String fanArt
 int numberOfSeasons
