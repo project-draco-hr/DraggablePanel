@@ -1,5 +1,4 @@
 {
   super(context,attrs,defStyle);
   initializeAttrs(attrs);
-  initializeEditMode();
 }
