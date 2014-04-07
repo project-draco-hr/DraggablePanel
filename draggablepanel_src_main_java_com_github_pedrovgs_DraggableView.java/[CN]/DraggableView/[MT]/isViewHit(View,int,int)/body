@@ -1,5 +1,4 @@
 {
-  Log.d(LOGTAG,"isViewHit");
   int[] viewLocation=new int[2];
   view.getLocationOnScreen(viewLocation);
   int[] parentLocation=new int[2];

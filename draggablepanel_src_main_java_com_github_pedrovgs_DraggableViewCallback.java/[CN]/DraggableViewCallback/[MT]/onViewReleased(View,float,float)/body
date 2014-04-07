@@ -1,7 +1,5 @@
 {
   super.onViewReleased(releasedChild,xVel,yVel);
-  Log.e("DEPURAR","X-->" + xVel);
-  Log.e("DEPURAR","Y-->" + yVel);
   if (draggableView.isDragViewAtBottom() && !draggableView.isDragViewAtRight()) {
     if (xVel < 0 && xVel <= X_MIN_VELOCITY) {
       draggableView.closeToLeft();
