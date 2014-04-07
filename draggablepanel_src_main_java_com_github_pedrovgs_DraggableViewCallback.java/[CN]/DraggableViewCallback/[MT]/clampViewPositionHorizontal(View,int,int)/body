@@ -1,6 +1,6 @@
 {
   int newLeft=0;
-  if (((draggableView.isMinimized() && (dx > MINIMUN_DX_FOR_HORIZONTAL_DRAG || dx < -MINIMUN_DX_FOR_HORIZONTAL_DRAG))) || (draggableView.isDragViewAtBottom() && !draggableView.isDragViewAtRight())) {
+  if ((draggableView.isMinimized() && Math.abs(dx) > MINIMUN_DX_FOR_HORIZONTAL_DRAG) || (draggableView.isDragViewAtBottom() && !draggableView.isDragViewAtRight())) {
     newLeft=left;
   }
   return newLeft;

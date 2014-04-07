@@ -1,22 +1,40 @@
 {
-  super.onViewReleased(releasedChild,xvel,yvel);
-  if (!draggableView.isDragViewAtBottom()) {
-    if (draggableView.isHeaderAboveTheMiddle()) {
-      draggableView.maximize();
-    }
- else {
-      draggableView.minimize();
-    }
-  }
- else {
-    if (draggableView.isNextToLeftBound()) {
+  super.onViewReleased(releasedChild,xVel,yVel);
+  Log.e("DEPURAR","X-->" + xVel);
+  Log.e("DEPURAR","Y-->" + yVel);
+  if (draggableView.isDragViewAtBottom() && !draggableView.isDragViewAtRight()) {
+    if (xVel < 0 && xVel <= X_MIN_VELOCITY) {
       draggableView.closeToLeft();
     }
- else     if (draggableView.isNextToRightBound()) {
+ else     if (xVel > 0 && xVel >= X_MIN_VELOCITY) {
       draggableView.closeToRight();
     }
  else {
+      if (draggableView.isNextToLeftBound()) {
+        draggableView.closeToLeft();
+      }
+ else       if (draggableView.isNextToRightBound()) {
+        draggableView.closeToRight();
+      }
+ else {
+        draggableView.minimize();
+      }
+    }
+  }
+ else {
+    if (yVel < 0 && yVel <= -Y_MIN_VELOCITY) {
+      draggableView.maximize();
+    }
+ else     if (yVel > 0 && yVel >= Y_MIN_VELOCITY) {
       draggableView.minimize();
+    }
+ else {
+      if (draggableView.isHeaderAboveTheMiddle()) {
+        draggableView.maximize();
+      }
+ else {
+        draggableView.minimize();
+      }
     }
   }
 }
