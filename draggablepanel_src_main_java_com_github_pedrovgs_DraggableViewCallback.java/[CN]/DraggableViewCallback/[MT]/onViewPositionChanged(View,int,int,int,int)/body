@@ -1,0 +1,13 @@
+{
+  if (draggableView.isDragViewAtBottom()) {
+    draggableView.changeDragViewViewAlpha();
+  }
+ else {
+    draggableView.changeDragViewScale();
+    draggableView.changeDragViewPosition();
+    draggableView.changeSecondViewAlpha();
+    draggableView.changeSeondViewPosition();
+    draggableView.changeBackgroundAlpha();
+  }
+  draggableView.invalidate();
+}

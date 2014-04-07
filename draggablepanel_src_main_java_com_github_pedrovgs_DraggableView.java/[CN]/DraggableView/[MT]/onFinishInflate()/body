@@ -4,5 +4,6 @@
     dragView=findViewById(dragViewId);
     secondView=findViewById(secondViewId);
     setTopViewHeight(topViewHeight);
+    initializeView();
   }
 }

@@ -1,0 +1,22 @@
+{
+  super.onViewReleased(releasedChild,xvel,yvel);
+  if (!draggableView.isDragViewAtBottom()) {
+    if (draggableView.isHeaderAboveTheMiddle()) {
+      draggableView.maximize();
+    }
+ else {
+      draggableView.minimize();
+    }
+  }
+ else {
+    if (draggableView.isNextToLeftBound()) {
+      draggableView.closeToLeft();
+    }
+ else     if (draggableView.isNextToRightBound()) {
+      draggableView.closeToRight();
+    }
+ else {
+      draggableView.minimize();
+    }
+  }
+}
