@@ -1,0 +1,4 @@
+{
+  Picasso.with(this).load(VIDEO_POSTER).into(iv_poster);
+  Picasso.with(this).load(VIDEO_THUMBNAIL).into(iv_thumbnail);
+}
