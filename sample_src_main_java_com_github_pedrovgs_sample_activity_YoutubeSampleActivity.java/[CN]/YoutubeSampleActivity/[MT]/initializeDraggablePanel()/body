@@ -3,4 +3,5 @@
   draggablePanel.setTopFragment(youtubeFragment);
   draggablePanel.setBottomFragment(new MoviePosterFragment(VIDEO_POSTER_THUMBNAIL));
   draggablePanel.initializeView();
+  Picasso.with(this).load(SECOND_VIDEO_POSTER_THUMBNAIL).into(iv_thumbnail);
 }

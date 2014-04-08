@@ -14,4 +14,5 @@
   draggableView.setTopViewMarginBottom(topFragmentMarginBottom);
   draggableView.attachBottomFragment(bottomFragment);
   draggableView.setDraggableListener(draggableListener);
+  draggableView.setHorizontalAlphaEffectEnabled(enableHorizontalAlphaEffect);
 }

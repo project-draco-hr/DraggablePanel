@@ -1,7 +1,9 @@
 {
-  float alpha=1 - getHorizontalDragOffset();
-  if (alpha == 0) {
-    alpha=1;
+  if (enableHorizontalAlphaEffect) {
+    float alpha=1 - getHorizontalDragOffset();
+    if (alpha == 0) {
+      alpha=1;
+    }
+    ViewHelper.setAlpha(dragView,alpha);
   }
-  ViewHelper.setAlpha(dragView,alpha);
 }
