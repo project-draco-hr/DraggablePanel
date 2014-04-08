@@ -3,6 +3,7 @@
   draggablePanel.setTopFragment(youtubeFragment);
   MoviePosterFragment moviePosterFragment=new MoviePosterFragment();
   moviePosterFragment.setPoster(VIDEO_POSTER_THUMBNAIL);
+  moviePosterFragment.setPosterTitle(VIDEO_POSTER_TITLE);
   draggablePanel.setBottomFragment(moviePosterFragment);
   draggablePanel.initializeView();
   Picasso.with(this).load(SECOND_VIDEO_POSTER_THUMBNAIL).placeholder(R.drawable.xmen_placeholder).into(iv_thumbnail);
