@@ -1,4 +1,5 @@
 {
-  dragView.layout(lastLeftPosition,lastTopPosition,lastLeftPosition + dragView.getMeasuredWidth(),(int)(lastTopPosition + topViewHeight));
-  secondView.layout(0,(int)(lastTopPosition + topViewHeight),right,lastTopPosition + bottom);
+  int topViewHeight=this.topViewHeight == DEFAULT_TOP_VIEW_HEIGHT ? dragView.getMeasuredHeight() : (int)this.topViewHeight;
+  dragView.layout(lastLeftPosition,lastTopPosition,lastLeftPosition + dragView.getMeasuredWidth(),lastTopPosition + topViewHeight);
+  secondView.layout(0,lastTopPosition + topViewHeight,right,lastTopPosition + bottom);
 }
