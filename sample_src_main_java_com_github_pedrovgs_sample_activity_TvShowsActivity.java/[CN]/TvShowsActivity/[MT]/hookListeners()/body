@@ -1,4 +1,11 @@
 {
+  iv_fan_art.setOnTouchListener(new View.OnTouchListener(){
+    @Override public boolean onTouch(    View view,    MotionEvent motionEvent){
+      Toast.makeText(getBaseContext(),"culo",Toast.LENGTH_SHORT).show();
+      return false;
+    }
+  }
+);
   draggableView.setDraggableListener(new DraggableListener(){
     @Override public void onMaximized(){
       if (tvShowSelected != null) {
