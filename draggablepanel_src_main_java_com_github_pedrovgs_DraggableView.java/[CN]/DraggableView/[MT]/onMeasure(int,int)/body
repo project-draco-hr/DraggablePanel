@@ -1,0 +1,6 @@
+{
+  measureChildren(widthMeasureSpec,heightMeasureSpec);
+  int maxWidth=MeasureSpec.getSize(widthMeasureSpec);
+  int maxHeight=MeasureSpec.getSize(heightMeasureSpec);
+  setMeasuredDimension(resolveSize(maxWidth,widthMeasureSpec),this.resolveSize(maxHeight,heightMeasureSpec));
+}

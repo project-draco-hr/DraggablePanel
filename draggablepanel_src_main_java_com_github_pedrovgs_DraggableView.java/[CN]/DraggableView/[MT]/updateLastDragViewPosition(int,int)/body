@@ -1,0 +1,4 @@
+{
+  this.lastTopPosition=lastTopPosition;
+  this.lastLeftPosition=lastLeftPosition;
+}

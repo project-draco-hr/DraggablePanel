@@ -1,4 +1,5 @@
 {
+  draggableView.updateLastDragViewPosition(top,left);
   if (draggableView.isDragViewAtBottom()) {
     draggableView.changeDragViewViewAlpha();
   }
