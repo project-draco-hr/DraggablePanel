@@ -1,4 +1,5 @@
 {
+  this.placeViewModel=placeViewModel;
   tv_name.setText(placeViewModel.getName());
   Picasso.with(getActivity()).load(placeViewModel.getPhoto()).placeholder(R.drawable.maps_placeholder).into(iv_photo);
 }
