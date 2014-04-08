@@ -1,3 +1,0 @@
-{
-  Toast.makeText(this,"Video view clicked",Toast.LENGTH_SHORT).show();
-}
