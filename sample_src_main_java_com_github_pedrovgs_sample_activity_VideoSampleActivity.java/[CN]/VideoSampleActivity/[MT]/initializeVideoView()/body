@@ -1,7 +1,7 @@
 {
   Uri path=Uri.parse(APPLICATION_RAW_PATH + R.raw.video);
   MediaController mediaController=new MediaController(this);
-  video_view.setMediaController(mediaController);
-  video_view.setVideoURI(path);
-  video_view.start();
+  videoView.setMediaController(mediaController);
+  videoView.setVideoURI(path);
+  videoView.start();
 }
