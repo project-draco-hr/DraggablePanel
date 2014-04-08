@@ -4,4 +4,5 @@
   ButterKnife.inject(this);
   initializeYoutubeFragment();
   initializeDraggablePanel();
+  hookDraggablePanelListeners();
 }
