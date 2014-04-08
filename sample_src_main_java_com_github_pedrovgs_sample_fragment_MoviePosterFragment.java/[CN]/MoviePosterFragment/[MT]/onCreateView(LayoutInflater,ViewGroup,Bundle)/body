@@ -1,0 +1,6 @@
+{
+  View view=inflater.inflate(R.layout.fragment_movie_poster,container,false);
+  ButterKnife.inject(this,view);
+  Picasso.with(getActivity()).load(videoPosterThumbnail).placeholder(R.drawable.tv_show_placeholder).into(iv_thumbnail);
+  return view;
+}
