@@ -2,17 +2,21 @@
   draggableView.setDraggableListener(new DraggableListener(){
     @Override public void onMaximized(){
       if (tvShowSelected != null) {
+        getSupportActionBar().setTitle(tvShowSelected.getTitle());
       }
     }
     @Override public void onMinimized(){
       if (tvShowSelected != null) {
+        getSupportActionBar().setTitle(tvShowSelected.getTitle());
       }
     }
     @Override public void onClosedToLeft(){
       tvShowSelected=null;
+      getSupportActionBar().setTitle(R.string.tv_shows_sample_activity_title);
     }
     @Override public void onClosedToRight(){
       tvShowSelected=null;
+      getSupportActionBar().setTitle(R.string.tv_shows_sample_activity_title);
     }
   }
 );
