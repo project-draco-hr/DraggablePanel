@@ -1,10 +1,10 @@
 {
-  gv_tv_shows.setAdapter(adapter);
-  gv_tv_shows.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+  tvShowsGridView.setAdapter(adapter);
+  tvShowsGridView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
     @Override public void onItemClick(    AdapterView<?> adapterView,    View view,    int position,    long id){
       TvShowViewModel tvShow=adapter.getItem(position);
       tvShowSelected=tvShow;
-      Picasso.with(getBaseContext()).load(tvShow.getFanArt()).placeholder(R.drawable.tv_show_placeholder).into(iv_fan_art);
+      Picasso.with(getBaseContext()).load(tvShow.getFanArt()).placeholder(R.drawable.tv_show_placeholder).into(fanArtImageView);
       renderEpisodesHeader(tvShow);
       renderEpisodes(tvShow);
       draggableView.setVisibility(View.VISIBLE);

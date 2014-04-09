@@ -1,0 +1,5 @@
+{
+  if (tvShowSelected != null) {
+    getSupportActionBar().setTitle(tvShowSelected.getTitle());
+  }
+}

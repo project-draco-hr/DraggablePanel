@@ -3,5 +3,5 @@
   episodeRenderers.add(new EpisodeRenderer());
   EpisodeRendererBuilder episodeRendererBuilder=new EpisodeRendererBuilder(episodeRenderers);
   EpisodeRendererAdapter episodesAdapter=new EpisodeRendererAdapter(getLayoutInflater(),episodeRendererBuilder,tvShow.getEpisodes());
-  lv_episodes.setAdapter(episodesAdapter);
+  episodesListView.setAdapter(episodesAdapter);
 }

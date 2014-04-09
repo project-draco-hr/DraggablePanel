@@ -1,21 +1,15 @@
 {
   draggablePanel.setDraggableListener(new DraggableListener(){
     @Override public void onMaximized(){
-      if (!youtubePlayer.isPlaying()) {
-        youtubePlayer.play();
-      }
+      playVideo();
     }
     @Override public void onMinimized(){
     }
     @Override public void onClosedToLeft(){
-      if (youtubePlayer.isPlaying()) {
-        youtubePlayer.pause();
-      }
+      pauseVideo();
     }
     @Override public void onClosedToRight(){
-      if (youtubePlayer.isPlaying()) {
-        youtubePlayer.pause();
-      }
+      pauseVideo();
     }
   }
 );

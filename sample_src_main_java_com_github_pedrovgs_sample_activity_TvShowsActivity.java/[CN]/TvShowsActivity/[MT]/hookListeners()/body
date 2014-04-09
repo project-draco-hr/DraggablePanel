@@ -1,22 +1,16 @@
 {
   draggableView.setDraggableListener(new DraggableListener(){
     @Override public void onMaximized(){
-      if (tvShowSelected != null) {
-        getSupportActionBar().setTitle(tvShowSelected.getTitle());
-      }
+      updateActionBarTitle();
     }
     @Override public void onMinimized(){
-      if (tvShowSelected != null) {
-        getSupportActionBar().setTitle(tvShowSelected.getTitle());
-      }
+      updateActionBarTitle();
     }
     @Override public void onClosedToLeft(){
-      tvShowSelected=null;
-      getSupportActionBar().setTitle(R.string.tv_shows_sample_activity_title);
+      resetActionBarTitle();
     }
     @Override public void onClosedToRight(){
-      tvShowSelected=null;
-      getSupportActionBar().setTitle(R.string.tv_shows_sample_activity_title);
+      resetActionBarTitle();
     }
   }
 );
