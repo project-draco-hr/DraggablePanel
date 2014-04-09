@@ -1,5 +1,5 @@
 {
   int viewHeight=getHeight();
-  float viewHeaderY=ViewHelper.getY(dragView) + (dragView.getHeight() / 2);
-  return viewHeaderY < (viewHeight * 0.5f);
+  float viewHeaderY=ViewHelper.getY(dragView) + (dragView.getHeight() * HALF);
+  return viewHeaderY < (viewHeight * HALF);
 }
