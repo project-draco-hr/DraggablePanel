@@ -1,0 +1,19 @@
+{
+  if (xVel < 0 && xVel <= X_MIN_VELOCITY) {
+    draggableView.closeToLeft();
+  }
+ else   if (xVel > 0 && xVel >= X_MIN_VELOCITY) {
+    draggableView.closeToRight();
+  }
+ else {
+    if (draggableView.isNextToLeftBound()) {
+      draggableView.closeToLeft();
+    }
+ else     if (draggableView.isNextToRightBound()) {
+      draggableView.closeToRight();
+    }
+ else {
+      draggableView.minimize();
+    }
+  }
+}

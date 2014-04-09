@@ -1,0 +1,16 @@
+{
+  if (yVel < 0 && yVel <= -Y_MIN_VELOCITY) {
+    draggableView.maximize();
+  }
+ else   if (yVel > 0 && yVel >= Y_MIN_VELOCITY) {
+    draggableView.minimize();
+  }
+ else {
+    if (draggableView.isHeaderAboveTheMiddle()) {
+      draggableView.maximize();
+    }
+ else {
+      draggableView.minimize();
+    }
+  }
+}
