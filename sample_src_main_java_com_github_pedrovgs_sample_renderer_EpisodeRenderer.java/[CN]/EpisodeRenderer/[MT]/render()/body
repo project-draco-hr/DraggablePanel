@@ -1,6 +1,6 @@
 {
   EpisodeViewModel episode=getContent();
-  tv_episode_number.setText(String.format("%02d",position + 1));
-  tv_episode_title.setText(episode.getTitle());
-  tv_episode_publish_date.setText(episode.getPublishDate());
+  episodeNumberTextView.setText(String.format("%02d",position + 1));
+  episodeTitleTextView.setText(episode.getTitle());
+  episodeDateTextView.setText(episode.getPublishDate());
 }
