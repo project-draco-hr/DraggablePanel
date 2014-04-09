@@ -6,5 +6,5 @@
       draggableView.closeToRight();
     }
   }
-,10);
+,DELAY_MILLIS);
 }
