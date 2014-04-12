@@ -1,4 +1,4 @@
 {
   this.draggableView=draggableView;
-  this.capturedView=capturedView;
+  this.draggedView=draggedView;
 }

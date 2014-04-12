@@ -1,2 +1,2 @@
 DraggableView draggableView
-View capturedView
+View draggedView
