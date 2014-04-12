@@ -1,4 +1,0 @@
-{
-  lastVideoLoadedPosition=savedInstanceState.getInt(LAST_VIDEO_LOADED_POSITION,0);
-  showPlace(lastVideoLoadedPosition);
-}

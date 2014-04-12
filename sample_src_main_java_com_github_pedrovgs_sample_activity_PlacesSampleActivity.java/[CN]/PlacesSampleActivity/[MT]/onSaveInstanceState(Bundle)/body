@@ -1,5 +1,5 @@
 {
   super.onSaveInstanceState(outState);
   saveDraggableState(outState);
-  saveLastVideoLoadedPosition(outState);
+  saveLastPlaceLoadedPosition(outState);
 }

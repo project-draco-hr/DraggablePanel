@@ -1,3 +1,0 @@
-{
-  outState.putInt(LAST_VIDEO_LOADED_POSITION,lastVideoLoadedPosition);
-}
