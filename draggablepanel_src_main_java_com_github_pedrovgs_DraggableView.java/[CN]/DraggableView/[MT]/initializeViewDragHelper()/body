@@ -1,0 +1,3 @@
+{
+  viewDragHelper=ViewDragHelper.create(this,SENSITIVITY,new DraggableViewCallback(this,dragView));
+}

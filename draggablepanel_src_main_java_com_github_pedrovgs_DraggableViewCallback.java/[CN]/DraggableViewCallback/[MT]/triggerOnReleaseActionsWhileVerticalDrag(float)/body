@@ -6,7 +6,7 @@
     draggableView.minimize();
   }
  else {
-    if (draggableView.isHeaderAboveTheMiddle()) {
+    if (draggableView.isDragViewAboveTheMiddle()) {
       draggableView.maximize();
     }
  else {

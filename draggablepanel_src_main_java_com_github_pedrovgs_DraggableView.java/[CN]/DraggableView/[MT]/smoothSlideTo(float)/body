@@ -1,6 +1,6 @@
 {
   final int topBound=getPaddingTop();
-  int y=(int)(topBound + slideOffset * getVierticalDragRange());
+  int y=(int)(topBound + slideOffset * getVerticalDragRange());
   if (viewDragHelper.smoothSlideViewTo(dragView,0,y)) {
     ViewCompat.postInvalidateOnAnimation(this);
     return true;

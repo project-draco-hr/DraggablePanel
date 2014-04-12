@@ -7,7 +7,7 @@
     draggableView.changeDragViewScale();
     draggableView.changeDragViewPosition();
     draggableView.changeSecondViewAlpha();
-    draggableView.changeSeondViewPosition();
+    draggableView.changeSecondViewPosition();
     draggableView.changeBackgroundAlpha();
   }
   draggableView.invalidate();
