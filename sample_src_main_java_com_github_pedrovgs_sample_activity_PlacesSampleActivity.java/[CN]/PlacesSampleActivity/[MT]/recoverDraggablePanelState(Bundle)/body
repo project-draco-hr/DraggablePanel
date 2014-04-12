@@ -1,8 +1,8 @@
 {
-  final DraggablePanelState draggablePanelState=(DraggablePanelState)savedInstanceState.getSerializable(DRAGGABLE_PANEL_STATE);
-  if (draggablePanelState == null) {
+  final DraggableState draggableState=(DraggableState)savedInstanceState.getSerializable(DRAGGABLE_PANEL_STATE);
+  if (draggableState == null) {
     draggablePanel.setVisibility(View.GONE);
     return;
   }
-  updateDraggablePanelStateDelayed(draggablePanelState);
+  updateDraggablePanelStateDelayed(draggableState);
 }

@@ -1,6 +1,6 @@
 {
   Handler handler=new Handler();
-switch (draggablePanelState) {
+switch (draggableState) {
 case MAXIMIZED:
     handler.postDelayed(new Runnable(){
       @Override public void run(){
