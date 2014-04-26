@@ -5,8 +5,8 @@
   this.topViewHeight=attributes.getDimension(R.styleable.draggable_view_top_view_height,DEFAULT_TOP_VIEW_HEIGHT);
   this.xScaleFactor=attributes.getFloat(R.styleable.draggable_view_top_view_x_scale_factor,DEFAULT_SCALE_FACTOR);
   this.yScaleFactor=attributes.getFloat(R.styleable.draggable_view_top_view_y_scale_factor,DEFAULT_SCALE_FACTOR);
-  this.topFragmentMarginRight=attributes.getDimension(R.styleable.draggable_view_top_view_margin_right,DEFAULT_TOP_FRAGMENT_MARGIN);
-  this.topFragmentMarginBottom=attributes.getDimension(R.styleable.draggable_view_top_view_margin_bottom,DEFAULT_TOP_FRAGMENT_MARGIN);
-  this.enableHorizontalAlphaEffect=attributes.getBoolean(R.styleable.draggable_view_enable_minimized_horizontal_alpha_effect,DEFAULT_ENABLE_HORIZONTAL_ALPHA_EFECT);
+  this.topViewMarginRight=attributes.getDimension(R.styleable.draggable_view_top_view_margin_right,DEFAULT_TOP_VIEW_MARGIN);
+  this.topViewMarginBottom=attributes.getDimension(R.styleable.draggable_view_top_view_margin_bottom,DEFAULT_TOP_VIEW_MARGIN);
+  this.enableHorizontalAlphaEffect=attributes.getBoolean(R.styleable.draggable_view_enable_minimized_horizontal_alpha_effect,DEFAULT_ENABLE_HORIZONTAL_ALPHA_EFFECT);
   attributes.recycle();
 }
