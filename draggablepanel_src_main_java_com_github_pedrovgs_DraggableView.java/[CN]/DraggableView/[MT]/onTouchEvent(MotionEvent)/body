@@ -1,5 +1,8 @@
 {
   viewDragHelper.processTouchEvent(ev);
+  if (isClosed()) {
+    return false;
+  }
   boolean isDragViewHit=isViewHit(dragView,(int)ev.getX(),(int)ev.getY());
   boolean isSecondViewHit=isViewHit(secondView,(int)ev.getX(),(int)ev.getY());
   if (isMaximized()) {
