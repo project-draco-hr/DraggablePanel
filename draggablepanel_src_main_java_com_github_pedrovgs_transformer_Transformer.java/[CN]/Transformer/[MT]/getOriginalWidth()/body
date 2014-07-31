@@ -1,0 +1,6 @@
+{
+  if (originalWidth == 0) {
+    originalWidth=view.getMeasuredWidth();
+  }
+  return originalWidth;
+}

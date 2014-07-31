@@ -1,3 +1,0 @@
-{
-  ViewHelper.setPivotX(scaledView,scaledView.getWidth() - getMarginRight());
-}
