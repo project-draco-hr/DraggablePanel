@@ -1,0 +1,13 @@
+{
+  if (shouldScaleView()) {
+    resizer=new Resizer(dragView);
+  }
+ else {
+    resizer=new Resizer(dragView);
+  }
+  resizer.setViewHeight(attributes.getDimension(R.styleable.draggable_view_top_view_height,DEFAULT_TOP_VIEW_HEIGHT));
+  resizer.setXScaleFactor(attributes.getFloat(R.styleable.draggable_view_top_view_x_scale_factor,DEFAULT_SCALE_FACTOR));
+  resizer.setyScaleFactor(attributes.getFloat(R.styleable.draggable_view_top_view_y_scale_factor,DEFAULT_SCALE_FACTOR));
+  resizer.setMarginRight(attributes.getDimension(R.styleable.draggable_view_top_view_margin_right,DEFAULT_TOP_VIEW_MARGIN));
+  resizer.setMarginBottom(attributes.getDimension(R.styleable.draggable_view_top_view_margin_bottom,DEFAULT_TOP_VIEW_MARGIN));
+}

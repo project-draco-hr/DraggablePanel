@@ -1,9 +1,9 @@
 {
   super.onFinishInflate();
   if (!isInEditMode()) {
-    dragView=findViewById(dragViewId);
-    secondView=findViewById(secondViewId);
-    setTopViewHeight(topViewHeight);
+    mapGUI(attributes);
+    initializeResizer(attributes);
+    attributes.recycle();
     initializeViewDragHelper();
   }
 }

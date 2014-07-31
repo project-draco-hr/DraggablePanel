@@ -1,4 +1,4 @@
 {
-  this.lastTopPosition=lastTopPosition;
-  this.lastLeftPosition=lastLeftPosition;
+  resizer.setLastTopPosition(lastTopPosition);
+  resizer.setLastLeftPosition(lastLeftPosition);
 }

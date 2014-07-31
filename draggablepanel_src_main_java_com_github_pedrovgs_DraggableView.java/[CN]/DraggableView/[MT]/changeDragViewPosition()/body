@@ -1,4 +1,4 @@
 {
-  ViewHelper.setPivotX(dragView,dragView.getWidth() - getDragViewMarginRight());
-  ViewHelper.setPivotY(dragView,dragView.getHeight() - getDragViewMarginBottom());
+  resizer.updateXPosition();
+  resizer.updateYPosition();
 }

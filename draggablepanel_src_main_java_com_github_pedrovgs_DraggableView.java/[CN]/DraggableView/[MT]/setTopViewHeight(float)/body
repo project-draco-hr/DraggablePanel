@@ -1,8 +1,3 @@
 {
-  if (topFragmentHeight > 0) {
-    this.topViewHeight=topFragmentHeight;
-    LayoutParams layoutParams=(LayoutParams)dragView.getLayoutParams();
-    layoutParams.height=(int)topFragmentHeight;
-    dragView.setLayoutParams(layoutParams);
-  }
+  resizer.setViewHeight((int)topFragmentHeight);
 }

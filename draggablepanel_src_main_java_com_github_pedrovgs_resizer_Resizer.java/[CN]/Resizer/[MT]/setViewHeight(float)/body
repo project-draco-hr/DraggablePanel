@@ -1,0 +1,8 @@
+{
+  this.viewHeight=viewHeight;
+  if (viewHeight > 0f) {
+    RelativeLayout.LayoutParams layoutParams=(RelativeLayout.LayoutParams)scaledView.getLayoutParams();
+    layoutParams.height=(int)viewHeight;
+    scaledView.setLayoutParams(layoutParams);
+  }
+}

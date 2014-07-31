@@ -1,0 +1,3 @@
+{
+  ViewHelper.setScaleY(scaledView,1 - verticalDragOffset / yScaleFactor);
+}
