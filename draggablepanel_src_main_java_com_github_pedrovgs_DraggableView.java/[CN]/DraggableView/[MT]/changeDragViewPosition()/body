@@ -1,4 +1,4 @@
 {
-  resizer.updateXPosition();
-  resizer.updateYPosition();
+  transformer.updateXPosition();
+  transformer.updateYPosition();
 }

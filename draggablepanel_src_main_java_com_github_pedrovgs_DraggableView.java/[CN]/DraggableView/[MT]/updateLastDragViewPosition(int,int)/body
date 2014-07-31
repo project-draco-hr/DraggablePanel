@@ -1,4 +1,4 @@
 {
-  resizer.setLastTopPosition(lastTopPosition);
-  resizer.setLastLeftPosition(lastLeftPosition);
+  transformer.setLastTopPosition(lastTopPosition);
+  transformer.setLastLeftPosition(lastLeftPosition);
 }

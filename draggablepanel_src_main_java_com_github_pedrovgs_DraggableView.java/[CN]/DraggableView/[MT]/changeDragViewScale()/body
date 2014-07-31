@@ -1,4 +1,4 @@
 {
-  resizer.updateWidth(getVerticalDragOffset());
-  resizer.updateHeight(getVerticalDragOffset());
+  transformer.updateWidth(getVerticalDragOffset());
+  transformer.updateHeight(getVerticalDragOffset());
 }
