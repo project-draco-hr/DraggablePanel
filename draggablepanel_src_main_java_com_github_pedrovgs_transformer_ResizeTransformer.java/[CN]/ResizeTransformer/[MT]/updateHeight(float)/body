@@ -4,5 +4,4 @@
   params.height=newHeight;
   lastHeight=newHeight;
   getView().setLayoutParams(params);
-  Log.e("DEPURAR","NEW HEIGHT " + newHeight);
 }

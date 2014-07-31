@@ -3,5 +3,4 @@
   int newWidth=(int)(getOriginalWidth() * (1 - verticalDragOffset / getxScaleFactor()));
   params.width=newWidth;
   getView().setLayoutParams(params);
-  Log.d("DEPURAR","NEW WIDTH " + newWidth);
 }
