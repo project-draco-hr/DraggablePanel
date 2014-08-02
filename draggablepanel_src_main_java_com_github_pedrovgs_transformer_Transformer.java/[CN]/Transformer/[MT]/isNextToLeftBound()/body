@@ -1,0 +1,3 @@
+{
+  return (view.getRight() - getMarginRight()) < parent.getWidth() * 0.25;
+}

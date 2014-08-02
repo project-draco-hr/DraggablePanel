@@ -1,0 +1,5 @@
+{
+  int parentHeight=parent.getHeight();
+  float viewYPosition=ViewHelper.getY(view) + (view.getHeight() * 0.5f);
+  return viewYPosition < (parentHeight * 0.5);
+}

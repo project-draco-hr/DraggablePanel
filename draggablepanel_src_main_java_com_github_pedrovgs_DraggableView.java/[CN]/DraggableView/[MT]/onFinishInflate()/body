@@ -2,7 +2,7 @@
   super.onFinishInflate();
   if (!isInEditMode()) {
     mapGUI(attributes);
-    initializeResizer(attributes);
+    initializeTransformer(attributes);
     attributes.recycle();
     initializeViewDragHelper();
   }

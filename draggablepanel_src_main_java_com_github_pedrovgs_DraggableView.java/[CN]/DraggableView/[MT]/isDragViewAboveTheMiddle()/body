@@ -1,5 +1,3 @@
 {
-  int viewHeight=getHeight();
-  float viewHeaderY=ViewHelper.getY(dragView) + (dragView.getHeight() * HALF);
-  return viewHeaderY < (viewHeight * HALF);
+  return transformer.isAboveTheMiddle();
 }

@@ -1,9 +1,9 @@
 {
   if (shouldScaleView()) {
-    transformer=new Transformer(dragView);
+    transformer=new Transformer(dragView,this);
   }
  else {
-    transformer=new ResizeTransformer(dragView);
+    transformer=new ResizeTransformer(dragView,this);
   }
   transformer.setViewHeight(attributes.getDimension(R.styleable.draggable_view_top_view_height,DEFAULT_TOP_VIEW_HEIGHT));
   transformer.setXScaleFactor(attributes.getFloat(R.styleable.draggable_view_top_view_x_scale_factor,DEFAULT_SCALE_FACTOR));
