@@ -1,4 +1,4 @@
 {
-  transformer.updateXPosition();
+  transformer.updateXPosition(getVerticalDragOffset());
   transformer.updateYPosition();
 }
