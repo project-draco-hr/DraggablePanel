@@ -1,4 +1,5 @@
 {
+  topViewResize=attributes.getBoolean(R.styleable.draggable_view_top_view_resize,DEFAULT_TOP_VIEW_RESIZE);
   if (shouldScaleView()) {
     transformer=new Transformer(dragView,this);
   }
