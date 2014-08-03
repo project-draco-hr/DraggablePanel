@@ -1,0 +1,10 @@
+{
+  Transformer transformer=null;
+  if (resize) {
+    transformer=new ResizeTransformer(view,parent);
+  }
+ else {
+    transformer=new Transformer(view,parent);
+  }
+  return transformer;
+}
