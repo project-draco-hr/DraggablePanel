@@ -1,3 +1,3 @@
 {
-  return (int)(getOriginalWidth() / getxScaleFactor());
+  return (int)(getOriginalWidth() / getXScaleFactor());
 }

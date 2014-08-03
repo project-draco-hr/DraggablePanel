@@ -1,3 +1,3 @@
 {
-  return transformer.getHeightPlusMarginTop();
+  return transformer.getMinHeightPlusMargin();
 }
