@@ -1,5 +1,4 @@
 {
-  Log.i("DEPURAR","OFFSET " + verticalDragOffset);
   int left, top, right, bottom;
   left=(int)(getOriginalWidth() - getViewWidth());
   right=getViewRightPosition(verticalDragOffset);
@@ -7,5 +6,4 @@
   top=getView().getTop();
   bottom=getView().getBottom();
   getView().layout(left,top,right,bottom);
-  Log.e("DEPURAR","LEFT " + left + " - RIGHT "+ right);
 }
