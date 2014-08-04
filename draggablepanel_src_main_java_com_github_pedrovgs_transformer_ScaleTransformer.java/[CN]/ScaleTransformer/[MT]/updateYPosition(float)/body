@@ -1,0 +1,3 @@
+{
+  ViewHelper.setPivotY(getView(),getView().getHeight() - getMarginBottom());
+}
