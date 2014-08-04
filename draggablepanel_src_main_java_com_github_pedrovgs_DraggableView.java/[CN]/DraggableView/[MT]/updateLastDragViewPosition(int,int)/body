@@ -1,4 +1,4 @@
 {
-  this.lastTopPosition=lastTopPosition;
-  this.lastLeftPosition=lastLeftPosition;
+  transformer.setLastTopPosition(lastTopPosition);
+  transformer.setLastLeftPosition(lastLeftPosition);
 }

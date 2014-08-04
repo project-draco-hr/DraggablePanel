@@ -1,0 +1,6 @@
+{
+  if (lastRightPosition <= 0) {
+    lastRightPosition=view.getMeasuredWidth();
+  }
+  return lastRightPosition;
+}

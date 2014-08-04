@@ -1,5 +1,5 @@
 {
-  int newLeft=0;
+  int newLeft=draggedView.getLeft();
   if ((draggableView.isMinimized() && Math.abs(dx) > MINIMUN_DX_FOR_HORIZONTAL_DRAG) || (draggableView.isDragViewAtBottom() && !draggableView.isDragViewAtRight())) {
     newLeft=left;
   }

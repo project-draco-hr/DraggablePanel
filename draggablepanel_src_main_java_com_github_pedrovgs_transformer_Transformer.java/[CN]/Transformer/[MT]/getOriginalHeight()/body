@@ -1,0 +1,6 @@
+{
+  if (originalHeight == 0) {
+    originalHeight=viewHeight < 0 ? view.getMeasuredHeight() : viewHeight;
+  }
+  return originalHeight;
+}
