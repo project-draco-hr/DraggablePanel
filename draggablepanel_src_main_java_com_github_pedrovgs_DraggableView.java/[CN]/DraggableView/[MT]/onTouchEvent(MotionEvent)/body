@@ -8,5 +8,8 @@
   if (isMaximized()) {
     dragView.dispatchTouchEvent(ev);
   }
+ else {
+    dragView.dispatchTouchEvent(cloneMotionEventWithAction(ev,MotionEvent.ACTION_CANCEL));
+  }
   return isDragViewHit || isSecondViewHit;
 }

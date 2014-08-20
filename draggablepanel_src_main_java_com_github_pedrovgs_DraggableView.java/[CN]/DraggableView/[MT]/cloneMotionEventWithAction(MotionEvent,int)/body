@@ -1,0 +1,3 @@
+{
+  return MotionEvent.obtain(event.getDownTime(),event.getEventTime(),action,event.getX(),event.getY(),event.getMetaState());
+}
