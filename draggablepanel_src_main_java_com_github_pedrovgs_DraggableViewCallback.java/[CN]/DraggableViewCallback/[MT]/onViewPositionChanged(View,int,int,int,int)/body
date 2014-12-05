@@ -1,7 +1,4 @@
 {
-  if (0 == top) {
-    draggableView.requestLayout();
-  }
   if (draggableView.isDragViewAtBottom()) {
     draggableView.changeDragViewViewAlpha();
   }
@@ -12,5 +9,8 @@
     draggableView.changeSecondViewAlpha();
     draggableView.changeSecondViewPosition();
     draggableView.changeBackgroundAlpha();
+  }
+  if (0 == top) {
+    draggableView.requestLayout();
   }
 }
