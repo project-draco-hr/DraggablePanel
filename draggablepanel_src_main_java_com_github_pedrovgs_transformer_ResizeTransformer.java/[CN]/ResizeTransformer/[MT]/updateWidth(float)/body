@@ -1,6 +1,0 @@
-{
-  RelativeLayout.LayoutParams params=(RelativeLayout.LayoutParams)getView().getLayoutParams();
-  int newWidth=(int)(getOriginalWidth() * (1 - verticalDragOffset / getXScaleFactor()));
-  params.width=newWidth;
-  getView().setLayoutParams(params);
-}

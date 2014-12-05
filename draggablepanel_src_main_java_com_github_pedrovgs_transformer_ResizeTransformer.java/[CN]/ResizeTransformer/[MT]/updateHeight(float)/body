@@ -1,7 +1,0 @@
-{
-  RelativeLayout.LayoutParams params=(RelativeLayout.LayoutParams)getView().getLayoutParams();
-  int newHeight=(int)(getOriginalHeight() * (1 - verticalDragOffset / getYScaleFactor()));
-  params.height=newHeight;
-  lastHeight=newHeight;
-  getView().setLayoutParams(params);
-}

@@ -1,3 +1,0 @@
-{
-  return lastHeight == 0 ? super.getViewHeight() : lastHeight;
-}

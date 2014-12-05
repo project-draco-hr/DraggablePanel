@@ -1,3 +1,4 @@
 {
   ViewHelper.setPivotX(getView(),getView().getWidth() - getMarginRight());
+  ViewHelper.setPivotY(getView(),getView().getHeight() - getMarginBottom());
 }

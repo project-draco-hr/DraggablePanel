@@ -1,0 +1,5 @@
+{
+  layoutParams.width=(int)(getOriginalWidth() * (1 - verticalDragOffset / getXScaleFactor()));
+  layoutParams.height=(int)(getOriginalHeight() * (1 - verticalDragOffset / getYScaleFactor()));
+  getView().setLayoutParams(layoutParams);
+}

@@ -1,3 +1,0 @@
-{
-  return viewHeight < 0f ? view.getMeasuredHeight() : viewHeight;
-}
