@@ -1,6 +1,6 @@
 {
   int left, top, right, bottom;
-  left=(int)(getOriginalWidth() - getViewWidth());
+  left=getOriginalWidth() - getViewWidth();
   right=getViewRightPosition(verticalDragOffset);
   top=getView().getTop();
   bottom=getView().getBottom();

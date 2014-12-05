@@ -1,9 +1,9 @@
 {
-  this.viewHeight=viewHeight;
-  if (viewHeight > 0f) {
+  viewHeight=newHeight;
+  if (viewHeight > 0) {
     originalHeight=viewHeight;
     RelativeLayout.LayoutParams layoutParams=(RelativeLayout.LayoutParams)view.getLayoutParams();
-    layoutParams.height=(int)viewHeight;
+    layoutParams.height=viewHeight;
     view.setLayoutParams(layoutParams);
   }
 }
