@@ -1,4 +1,7 @@
 {
+  if (0 == top) {
+    draggableView.requestLayout();
+  }
   if (draggableView.isDragViewAtBottom()) {
     draggableView.changeDragViewViewAlpha();
   }
