@@ -1,4 +1,0 @@
-{
-  transformer.setLastTopPosition(lastTopPosition);
-  transformer.setLastLeftPosition(lastLeftPosition);
-}

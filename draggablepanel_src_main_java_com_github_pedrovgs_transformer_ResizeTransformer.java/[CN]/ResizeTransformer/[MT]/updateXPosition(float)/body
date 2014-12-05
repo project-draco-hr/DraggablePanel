@@ -2,7 +2,6 @@
   int left, top, right, bottom;
   left=(int)(getOriginalWidth() - getViewWidth());
   right=getViewRightPosition(verticalDragOffset);
-  setLastRightPosition(right);
   top=getView().getTop();
   bottom=getView().getBottom();
   getView().layout(left,top,right,bottom);
