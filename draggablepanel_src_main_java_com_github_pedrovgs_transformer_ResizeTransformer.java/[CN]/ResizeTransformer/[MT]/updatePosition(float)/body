@@ -1,0 +1,7 @@
+{
+  int right=getViewRightPosition(verticalDragOffset);
+  int left=right - layoutParams.width;
+  int top=getView().getTop();
+  int bottom=top + layoutParams.height;
+  getView().layout(left,top,right,bottom);
+}
