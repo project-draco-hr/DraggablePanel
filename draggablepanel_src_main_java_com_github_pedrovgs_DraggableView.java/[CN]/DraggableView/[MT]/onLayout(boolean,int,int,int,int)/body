@@ -1,8 +1,8 @@
 {
   if (isInEditMode())   super.onLayout(changed,left,top,right,bottom);
  else   if (isDragViewAtTop()) {
-    dragView.layout(left,top,right,(int)transformer.getOriginalHeight());
-    secondView.layout(left,(int)transformer.getOriginalHeight(),right,bottom);
+    dragView.layout(left,top,right,transformer.getOriginalHeight());
+    secondView.layout(left,transformer.getOriginalHeight(),right,bottom);
     ViewHelper.setY(dragView,top);
     ViewHelper.setY(secondView,transformer.getOriginalHeight());
   }
