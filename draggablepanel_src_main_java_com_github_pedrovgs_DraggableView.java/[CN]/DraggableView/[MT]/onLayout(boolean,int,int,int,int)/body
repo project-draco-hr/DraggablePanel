@@ -6,4 +6,7 @@
     ViewHelper.setY(dragView,top);
     ViewHelper.setY(secondView,transformer.getOriginalHeight());
   }
+ else {
+    secondView.layout(left,transformer.getOriginalHeight(),right,bottom);
+  }
 }

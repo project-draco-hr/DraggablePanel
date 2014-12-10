@@ -10,7 +10,4 @@
     draggableView.changeSecondViewPosition();
     draggableView.changeBackgroundAlpha();
   }
-  if (0 == top) {
-    draggableView.requestLayout();
-  }
 }
