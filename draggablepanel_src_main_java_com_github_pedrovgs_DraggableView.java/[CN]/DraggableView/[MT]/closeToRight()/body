@@ -1,5 +1,5 @@
 {
-  if (viewDragHelper.smoothSlideViewTo(dragView,(int)transformer.getOriginalWidth(),getHeight() - transformer.getMinHeightPlusMargin())) {
+  if (viewDragHelper.smoothSlideViewTo(dragView,transformer.getOriginalWidth(),getHeight() - transformer.getMinHeightPlusMargin())) {
     ViewCompat.postInvalidateOnAnimation(this);
     notifyCloseToRightListener();
   }
