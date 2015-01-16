@@ -5,6 +5,9 @@
   }
   boolean isDragViewHit=isViewHit(dragView,(int)ev.getX(),(int)ev.getY());
   boolean isSecondViewHit=isViewHit(secondView,(int)ev.getX(),(int)ev.getY());
+  if (isMinimized() && mEnableClickToExpand) {
+    maximize();
+  }
   if (isMaximized()) {
     dragView.dispatchTouchEvent(ev);
   }
