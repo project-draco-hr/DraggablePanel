@@ -14,5 +14,7 @@ if (isMinimized() && isClickToMaximizeEnabled()) {
 }
 }
 break;
+default :
+break;
 }
 }

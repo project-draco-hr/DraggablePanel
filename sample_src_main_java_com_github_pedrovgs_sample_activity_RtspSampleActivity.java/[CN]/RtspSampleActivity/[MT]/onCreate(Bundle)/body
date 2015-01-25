@@ -1,0 +1,10 @@
+{
+  super.onCreate(savedInstanceState);
+  setContentView(R.layout.activity_texture_view_sample);
+  ButterKnife.inject(this);
+  initFileName();
+  configActionBarName();
+  initMediaPlayer();
+  initTextureView();
+  loadBackgroundImage();
+}
