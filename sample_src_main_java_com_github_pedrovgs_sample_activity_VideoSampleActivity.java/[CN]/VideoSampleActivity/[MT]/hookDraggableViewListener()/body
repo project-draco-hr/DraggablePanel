@@ -1,0 +1,16 @@
+{
+  draggableView.setDraggableListener(new DraggableListener(){
+    @Override public void onMaximized(){
+      startVideo();
+    }
+    @Override public void onMinimized(){
+    }
+    @Override public void onClosedToLeft(){
+      pauseVideo();
+    }
+    @Override public void onClosedToRight(){
+      pauseVideo();
+    }
+  }
+);
+}

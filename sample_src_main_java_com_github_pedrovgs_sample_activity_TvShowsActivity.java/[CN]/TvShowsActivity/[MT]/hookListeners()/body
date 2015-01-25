@@ -1,0 +1,17 @@
+{
+  draggableView.setDraggableListener(new DraggableListener(){
+    @Override public void onMaximized(){
+      updateActionBarTitle();
+    }
+    @Override public void onMinimized(){
+      updateActionBarTitle();
+    }
+    @Override public void onClosedToLeft(){
+      resetActionBarTitle();
+    }
+    @Override public void onClosedToRight(){
+      resetActionBarTitle();
+    }
+  }
+);
+}

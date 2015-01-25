@@ -1,0 +1,10 @@
+{
+  placesListView.setAdapter(placesAdapter);
+  placesListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+    @Override public void onItemClick(    AdapterView<?> adapterView,    View view,    int position,    long id){
+      lastLoadedPlacePosition=position;
+      showPlace(position);
+    }
+  }
+);
+}

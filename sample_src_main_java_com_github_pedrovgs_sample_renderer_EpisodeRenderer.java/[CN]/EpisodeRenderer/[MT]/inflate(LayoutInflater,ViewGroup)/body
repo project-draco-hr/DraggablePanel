@@ -1,0 +1,3 @@
+{
+  return layoutInflater.inflate(R.layout.episode_row,viewGroup,false);
+}

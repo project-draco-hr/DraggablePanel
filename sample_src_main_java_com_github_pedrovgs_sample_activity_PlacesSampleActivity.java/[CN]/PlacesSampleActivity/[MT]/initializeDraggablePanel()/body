@@ -1,0 +1,18 @@
+{
+  draggablePanel.setFragmentManager(getSupportFragmentManager());
+  draggablePanel.setTopFragment(placeFragment);
+  draggablePanel.setBottomFragment(mapFragment);
+  TypedValue typedValue=new TypedValue();
+  getResources().getValue(R.dimen.x_scale_factor,typedValue,true);
+  float xScaleFactor=typedValue.getFloat();
+  typedValue=new TypedValue();
+  getResources().getValue(R.dimen.y_scale_factor,typedValue,true);
+  float yScaleFactor=typedValue.getFloat();
+  draggablePanel.setXScaleFactor(xScaleFactor);
+  draggablePanel.setYScaleFactor(yScaleFactor);
+  draggablePanel.setTopViewHeight(getResources().getDimensionPixelSize(R.dimen.top_fragment_height));
+  draggablePanel.setTopFragmentMarginRight(getResources().getDimensionPixelSize(R.dimen.top_fragment_margin));
+  draggablePanel.setTopFragmentMarginBottom(getResources().getDimensionPixelSize(R.dimen.top_fragment_margin));
+  draggablePanel.initializeView();
+  draggablePanel.setVisibility(View.GONE);
+}

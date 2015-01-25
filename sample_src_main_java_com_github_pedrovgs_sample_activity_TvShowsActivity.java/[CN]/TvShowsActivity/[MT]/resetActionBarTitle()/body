@@ -1,0 +1,4 @@
+{
+  tvShowSelected=null;
+  getSupportActionBar().setTitle(R.string.tv_shows_sample_activity_title);
+}

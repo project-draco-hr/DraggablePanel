@@ -1,0 +1,4 @@
+String name
+String photo
+double latitude
+double longitude

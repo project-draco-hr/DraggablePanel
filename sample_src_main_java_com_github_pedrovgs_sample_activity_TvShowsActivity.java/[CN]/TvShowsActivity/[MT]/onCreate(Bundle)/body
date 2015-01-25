@@ -1,0 +1,8 @@
+{
+  super.onCreate(savedInstanceState);
+  setContentView(R.layout.activity_tv_shows_sample);
+  ButterKnife.inject(this);
+  initializeDraggableView();
+  initializeGridView();
+  hookListeners();
+}

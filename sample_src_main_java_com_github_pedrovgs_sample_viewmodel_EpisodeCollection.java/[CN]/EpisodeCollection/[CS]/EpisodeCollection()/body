@@ -1,0 +1,3 @@
+{
+  this.episodes=new LinkedList<EpisodeViewModel>();
+}

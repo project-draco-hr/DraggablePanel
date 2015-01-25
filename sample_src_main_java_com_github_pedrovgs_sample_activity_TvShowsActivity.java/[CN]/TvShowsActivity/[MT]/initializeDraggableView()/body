@@ -1,0 +1,10 @@
+{
+  Handler handler=new Handler();
+  handler.postDelayed(new Runnable(){
+    @Override public void run(){
+      draggableView.setVisibility(View.GONE);
+      draggableView.closeToRight();
+    }
+  }
+,DELAY_MILLIS);
+}

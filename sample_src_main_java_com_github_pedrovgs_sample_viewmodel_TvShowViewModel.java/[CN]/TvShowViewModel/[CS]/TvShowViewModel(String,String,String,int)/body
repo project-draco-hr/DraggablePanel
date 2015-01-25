@@ -1,0 +1,7 @@
+{
+  this.title=title;
+  this.poster=poster;
+  this.fanArt=fanArt;
+  this.numberOfSeasons=numberOfSeasons;
+  this.episodes=new EpisodeCollection();
+}

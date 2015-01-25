@@ -1,0 +1,6 @@
+{
+  this.name=name;
+  this.photo=photo;
+  this.latitude=latitude;
+  this.longitude=longitude;
+}

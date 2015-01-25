@@ -1,0 +1,5 @@
+{
+  PlaceViewModel place=getContent();
+  nameTextView.setText(place.getName());
+  Picasso.with(context).load(place.getPhoto()).placeholder(R.drawable.maps_placeholder).into(photoImageView);
+}

@@ -1,0 +1,5 @@
+{
+  List<Renderer<TvShowViewModel>> prototypes=new LinkedList<Renderer<TvShowViewModel>>();
+  prototypes.add(new TvShowRenderer(context));
+  return new TvShowCollectionRendererBuilder(prototypes);
+}

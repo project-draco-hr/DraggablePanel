@@ -1,0 +1,4 @@
+{
+  placeFragment=new PlaceFragment();
+  mapFragment=SupportMapFragment.newInstance(new GoogleMapOptions().mapType(GoogleMap.MAP_TYPE_SATELLITE));
+}

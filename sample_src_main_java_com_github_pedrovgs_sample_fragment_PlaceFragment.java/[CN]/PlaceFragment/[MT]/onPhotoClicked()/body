@@ -1,0 +1,3 @@
+{
+  Toast.makeText(getActivity(),placeViewModel.getName(),Toast.LENGTH_LONG).show();
+}
