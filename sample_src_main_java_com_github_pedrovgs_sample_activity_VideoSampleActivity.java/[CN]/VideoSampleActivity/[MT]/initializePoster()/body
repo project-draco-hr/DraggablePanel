@@ -1,4 +1,0 @@
-{
-  Picasso.with(this).load(VIDEO_POSTER).placeholder(R.drawable.spiderman_placeholder).into(posterImageView);
-  Picasso.with(this).load(VIDEO_THUMBNAIL).placeholder(R.drawable.spiderman_placeholder).into(thumbnailImageView);
-}

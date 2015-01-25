@@ -1,6 +1,0 @@
-{
-  EpisodeViewModel episode=getContent();
-  episodeNumberTextView.setText(String.format("%02d",position + 1));
-  episodeTitleTextView.setText(episode.getTitle());
-  episodeDateTextView.setText(episode.getPublishDate());
-}

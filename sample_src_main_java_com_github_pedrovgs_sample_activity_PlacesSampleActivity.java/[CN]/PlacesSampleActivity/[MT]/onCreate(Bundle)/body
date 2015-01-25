@@ -1,8 +1,0 @@
-{
-  super.onCreate(savedInstanceState);
-  setContentView(R.layout.activity_place_sample);
-  ButterKnife.inject(this);
-  initializeFragments();
-  initializeListView();
-  initializeDraggablePanel();
-}

@@ -1,6 +1,0 @@
-{
-  TvShowViewModel tvShow=getContent();
-  Picasso.with(context).load(tvShow.getPoster()).placeholder(R.drawable.tv_show_placeholder).into(thumbnailImageView);
-  titleTextView.setText(tvShow.getTitle().toUpperCase());
-  seasonsCounterTextView.setText(tvShow.getNumberOfSeasons() + " seasons");
-}

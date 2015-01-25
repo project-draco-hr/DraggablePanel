@@ -1,3 +1,0 @@
-{
-  getActionBar().setTitle(getIntent().getExtras().getString(TYPE));
-}

@@ -1,5 +1,0 @@
-{
-  super.onRestoreInstanceState(savedInstanceState);
-  recoverDraggablePanelState(savedInstanceState);
-  loadLastPlaceClicked(savedInstanceState);
-}

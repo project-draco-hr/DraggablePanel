@@ -1,3 +1,0 @@
-{
-  outState.putInt(LAST_LOADED_PLACE_POSITION,lastLoadedPlacePosition);
-}

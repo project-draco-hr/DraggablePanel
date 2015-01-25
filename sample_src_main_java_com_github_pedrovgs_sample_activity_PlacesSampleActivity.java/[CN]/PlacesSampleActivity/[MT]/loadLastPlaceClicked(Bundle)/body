@@ -1,4 +1,0 @@
-{
-  lastLoadedPlacePosition=savedInstanceState.getInt(LAST_LOADED_PLACE_POSITION,0);
-  showPlace(lastLoadedPlacePosition);
-}

@@ -1,3 +1,0 @@
-{
-  return layoutInflater.inflate(R.layout.tv_show_row,viewGroup,false);
-}

@@ -1,5 +1,0 @@
-{
-  List<Renderer<VideoViewModel>> prototypes=new LinkedList<Renderer<VideoViewModel>>();
-  prototypes.add(new VideoRenderer(context));
-  return new VideoCollectionRendererBuilder(prototypes);
-}

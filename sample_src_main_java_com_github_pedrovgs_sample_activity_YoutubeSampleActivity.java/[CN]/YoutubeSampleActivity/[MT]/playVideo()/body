@@ -1,5 +1,0 @@
-{
-  if (!youtubePlayer.isPlaying()) {
-    youtubePlayer.play();
-  }
-}

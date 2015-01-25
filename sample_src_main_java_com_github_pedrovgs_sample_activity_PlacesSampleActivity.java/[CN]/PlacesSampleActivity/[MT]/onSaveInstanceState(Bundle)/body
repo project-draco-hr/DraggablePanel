@@ -1,5 +1,0 @@
-{
-  super.onSaveInstanceState(outState);
-  saveDraggableState(outState);
-  saveLastPlaceLoadedPosition(outState);
-}

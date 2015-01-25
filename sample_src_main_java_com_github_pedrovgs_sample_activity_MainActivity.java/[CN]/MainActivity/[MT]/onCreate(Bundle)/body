@@ -1,6 +1,0 @@
-{
-  super.onCreate(savedInstanceState);
-  setContentView(R.layout.activity_grid);
-  ButterKnife.inject(this);
-  initializeGridView();
-}

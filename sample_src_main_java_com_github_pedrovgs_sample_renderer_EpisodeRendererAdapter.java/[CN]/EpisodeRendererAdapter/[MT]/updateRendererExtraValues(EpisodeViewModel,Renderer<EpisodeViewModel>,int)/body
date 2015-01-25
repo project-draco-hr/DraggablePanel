@@ -1,5 +1,0 @@
-{
-  super.updateRendererExtraValues(content,renderer,position);
-  EpisodeRenderer episodeRenderer=(EpisodeRenderer)renderer;
-  episodeRenderer.setPosition(position);
-}

@@ -1,8 +1,0 @@
-{
-  super.onCreate(savedInstanceState);
-  setContentView(R.layout.activity_youtube_sample);
-  ButterKnife.inject(this);
-  initializeYoutubeFragment();
-  initializeDraggablePanel();
-  hookDraggablePanelListeners();
-}

@@ -1,3 +1,0 @@
-{
-  return new RendererAdapter<TvShowViewModel>(layoutInflater,tvShowCollectionRendererBuilder,tvShowCollectionViewModel);
-}

@@ -1,5 +1,0 @@
-{
-  List<Renderer<PlaceViewModel>> prototypes=new LinkedList<Renderer<PlaceViewModel>>();
-  prototypes.add(new PlaceRenderer(context));
-  return new PlacesCollectionRendererBuilder(prototypes);
-}

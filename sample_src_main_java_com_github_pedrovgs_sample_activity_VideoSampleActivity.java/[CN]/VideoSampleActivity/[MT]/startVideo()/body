@@ -1,5 +1,0 @@
-{
-  if (!videoView.isPlaying()) {
-    videoView.start();
-  }
-}

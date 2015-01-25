@@ -1,3 +1,0 @@
-{
-  return new RendererAdapter<VideoViewModel>(layoutInflater,videoCollectionRendererBuilder,videoCollectionViewModel);
-}

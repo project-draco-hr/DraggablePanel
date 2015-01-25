@@ -1,3 +1,0 @@
-{
-  Toast.makeText(this,VIDEO_TITLE,Toast.LENGTH_SHORT).show();
-}
