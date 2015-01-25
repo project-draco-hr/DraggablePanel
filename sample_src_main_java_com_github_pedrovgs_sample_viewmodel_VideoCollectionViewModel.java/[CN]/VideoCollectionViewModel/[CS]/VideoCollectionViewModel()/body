@@ -1,0 +1,5 @@
+{
+  this.videoList=new LinkedList<VideoViewModel>();
+  VideoViewModel videoViewModel=new VideoViewModel("teste",R.drawable.ic_launcher);
+  videoList.add(videoViewModel);
+}

@@ -1,0 +1,5 @@
+{
+  VideoViewModel item=getContent();
+  frameTitle.setText(item.getTitle());
+  Picasso.with(context).load(item.getImage()).placeholder(R.drawable.maps_placeholder).into(frameImage);
+}

@@ -1,0 +1,3 @@
+VideoViewModel content
+Renderer<VideoViewModel> renderer
+int position

@@ -1,6 +1,7 @@
 {
   super.onCreate(savedInstanceState);
   setContentView(R.layout.activity_video_sample);
+  ((DraggablePanelApplication)getApplication()).inject(this);
   ButterKnife.inject(this);
   initializeVideoView();
   initializePoster();

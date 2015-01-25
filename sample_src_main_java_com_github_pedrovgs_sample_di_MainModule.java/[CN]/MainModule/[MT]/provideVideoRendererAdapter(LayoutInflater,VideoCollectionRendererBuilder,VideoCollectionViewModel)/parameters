@@ -1,0 +1,3 @@
+LayoutInflater layoutInflater
+VideoCollectionRendererBuilder videoCollectionRendererBuilder
+VideoCollectionViewModel videoCollectionViewModel
