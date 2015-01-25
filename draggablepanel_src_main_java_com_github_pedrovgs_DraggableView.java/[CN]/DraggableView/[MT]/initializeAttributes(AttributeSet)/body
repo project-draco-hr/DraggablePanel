@@ -3,6 +3,5 @@
   this.enableHorizontalAlphaEffect=attributes.getBoolean(R.styleable.draggable_view_enable_minimized_horizontal_alpha_effect,DEFAULT_ENABLE_HORIZONTAL_ALPHA_EFFECT);
   this.enableClickToMaximize=attributes.getBoolean(R.styleable.draggable_view_enable_click_to_maximize,DEFAULT_ENABLE_CLICK_TO_MAXIMIZE);
   this.enableClickToMinimize=attributes.getBoolean(R.styleable.draggable_view_enable_click_to_minimize,DEFAULT_ENABLE_CLICK_TO_MINIMIZE);
-  this.minSlidingDistanceOnClick=attributes.getInt(R.styleable.draggable_view_min_sliding_distance_on_click,MIN_SLIDING_DISTANCE_ON_CLICK);
   this.attributes=attributes;
 }
