@@ -1,0 +1,3 @@
+{
+  return (Math.abs(deltaX) < getMinSlidingDistanceOnClick()) && ev.getAction() != MotionEvent.ACTION_MOVE && isDragViewHit;
+}

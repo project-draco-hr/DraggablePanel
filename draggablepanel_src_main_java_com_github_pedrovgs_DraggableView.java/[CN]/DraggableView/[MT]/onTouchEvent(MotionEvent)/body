@@ -5,24 +5,12 @@
   }
   boolean isDragViewHit=isViewHit(dragView,(int)ev.getX(),(int)ev.getY());
   boolean isSecondViewHit=isViewHit(secondView,(int)ev.getX(),(int)ev.getY());
-  boolean interceptTap=viewDragHelper.isViewUnder(dragView,(int)ev.getX(),(int)ev.getY());
+  analyzeTouchToMaximizeIfNeeded(ev,isDragViewHit);
   if (isMaximized()) {
     dragView.dispatchTouchEvent(ev);
   }
  else {
     dragView.dispatchTouchEvent(cloneMotionEventWithAction(ev,MotionEvent.ACTION_CANCEL));
   }
-switch (ev.getAction()) {
-case MotionEvent.ACTION_DOWN:
-    x1=ev.getX();
-  break;
-case MotionEvent.ACTION_UP:
-x2=ev.getX();
-float deltaX=x2 - x1;
-if (Math.abs(deltaX) < MIN_DISTANCE && isMinimized() && mEnableClickToExpand && isDragViewHit && interceptTap && ev.getAction() != MotionEvent.ACTION_MOVE) {
-maximize();
-}
-break;
-}
-return isDragViewHit || isSecondViewHit;
+  return isDragViewHit || isSecondViewHit;
 }
