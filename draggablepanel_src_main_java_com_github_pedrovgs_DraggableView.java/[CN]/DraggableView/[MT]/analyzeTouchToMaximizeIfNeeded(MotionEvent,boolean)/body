@@ -1,0 +1,20 @@
+{
+switch (ev.getAction()) {
+case MotionEvent.ACTION_DOWN:
+    lastTouchActionDownXPosition=ev.getX();
+  break;
+case MotionEvent.ACTION_UP:
+float clickOffset=ev.getX() - lastTouchActionDownXPosition;
+if (shouldMaximizeOnClick(ev,clickOffset,isDragViewHit)) {
+if (isMinimized() && isClickToMaximizeEnabled()) {
+  maximize();
+}
+ else if (isMaximized() && isClickToMinimizeEnabled()) {
+  minimize();
+}
+}
+break;
+default :
+break;
+}
+}

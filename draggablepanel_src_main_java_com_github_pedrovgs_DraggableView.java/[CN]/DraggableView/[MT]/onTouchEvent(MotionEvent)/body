@@ -5,6 +5,7 @@
   }
   boolean isDragViewHit=isViewHit(dragView,(int)ev.getX(),(int)ev.getY());
   boolean isSecondViewHit=isViewHit(secondView,(int)ev.getX(),(int)ev.getY());
+  analyzeTouchToMaximizeIfNeeded(ev,isDragViewHit);
   if (isMaximized()) {
     dragView.dispatchTouchEvent(ev);
   }
