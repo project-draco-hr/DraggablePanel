@@ -1,5 +1,5 @@
 {
-  if (!enableTouchListener) {
+  if (!enableTouch) {
     return false;
   }
   final int action=MotionEventCompat.getActionMasked(ev);

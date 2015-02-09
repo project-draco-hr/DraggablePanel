@@ -15,5 +15,5 @@
   draggableView.setHorizontalAlphaEffectEnabled(enableHorizontalAlphaEffect);
   draggableView.setClickToMaximizeEnabled(enableClickToMaximize);
   draggableView.setClickToMinimizeEnabled(enableClickToMinimize);
-  draggableView.setEnableTouchListener(enableTouchListener);
+  draggableView.setEnableTouch(enableTouchListener);
 }

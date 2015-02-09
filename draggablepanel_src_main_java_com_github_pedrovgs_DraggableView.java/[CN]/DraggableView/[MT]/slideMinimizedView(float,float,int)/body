@@ -1,8 +1,0 @@
-{
-  float slide=Math.abs(drawerPosition);
-  if (slideOffset > 0.1 && !isClosed()) {
-    minimize();
-  }
-  setEnableTouchListener(!(slideOffset > 0.1));
-  ViewHelper.setX(this,width - slide);
-}
