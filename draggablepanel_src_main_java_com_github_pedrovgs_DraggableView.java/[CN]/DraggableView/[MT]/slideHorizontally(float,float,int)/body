@@ -1,0 +1,7 @@
+{
+  if (slideOffset > MIN_SLIDE_OFFSET && !isClosed() && isMaximized()) {
+    minimize();
+  }
+  setTouchEnabled(slideOffset <= MIN_SLIDE_OFFSET);
+  ViewHelper.setX(this,width - Math.abs(drawerPosition));
+}

@@ -8,5 +8,6 @@
   this.enableHorizontalAlphaEffect=attributes.getBoolean(R.styleable.draggable_panel_enable_horizontal_alpha_effect,DEFAULT_ENABLE_HORIZONTAL_ALPHA_EFFECT);
   this.enableClickToMaximize=attributes.getBoolean(R.styleable.draggable_panel_enable_click_to_maximize_panel,DEFAULT_ENABLE_CLICK_TO_MAXIMIZE);
   this.enableClickToMinimize=attributes.getBoolean(R.styleable.draggable_panel_enable_click_to_minimize_panel,DEFAULT_ENABLE_CLICK_TO_MINIMIZE);
+  this.enableTouchListener=attributes.getBoolean(R.styleable.draggable_panel_enable_touch_listener_panel,DEFAULT_ENABLE_TOUCH_LISTENER);
   attributes.recycle();
 }

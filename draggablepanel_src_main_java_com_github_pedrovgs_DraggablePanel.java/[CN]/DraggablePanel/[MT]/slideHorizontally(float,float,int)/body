@@ -1,0 +1,3 @@
+{
+  draggableView.slideHorizontally(slideOffset,drawerPosition,width);
+}
