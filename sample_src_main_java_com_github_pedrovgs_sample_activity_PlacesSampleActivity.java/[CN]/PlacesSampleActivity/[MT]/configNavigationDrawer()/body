@@ -1,8 +1,8 @@
 {
   getSupportActionBar().setDisplayHomeAsUpEnabled(true);
   getSupportActionBar().setHomeButtonEnabled(true);
-  mDrawerLayoutLeft.setDrawerShadow(R.drawable.drawer_shadow,Gravity.LEFT);
-  drawerToggle=new ActionBarDrawerToggle(this,mDrawerLayoutLeft,R.drawable.nav_drawer,R.string.app_name,R.string.app_name){
+  drawerlayoutLeft.setDrawerShadow(R.drawable.drawer_shadow,Gravity.LEFT);
+  drawerToggle=new ActionBarDrawerToggle(this,drawerlayoutLeft,R.drawable.nav_drawer,R.string.app_name,R.string.app_name){
     @Override public void onDrawerOpened(    View drawerView){
       super.onDrawerOpened(drawerView);
     }
@@ -15,5 +15,5 @@
     }
   }
 ;
-  mDrawerLayoutLeft.setDrawerListener(drawerToggle);
+  drawerlayoutLeft.setDrawerListener(drawerToggle);
 }
