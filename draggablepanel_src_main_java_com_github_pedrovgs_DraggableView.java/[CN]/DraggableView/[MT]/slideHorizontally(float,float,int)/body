@@ -1,8 +1,7 @@
 {
-  float slide=Math.abs(drawerPosition);
-  if (slideOffset > MIN_SLIDE_OFFSET && !isClosed()) {
+  if (slideOffset > MIN_SLIDE_OFFSET && !isClosed() && isMaximized()) {
     minimize();
   }
-  setEnableTouch(!(slideOffset <= MIN_SLIDE_OFFSET));
-  ViewHelper.setX(this,width - slide);
+  setTouchEnabled(slideOffset <= MIN_SLIDE_OFFSET);
+  ViewHelper.setX(this,width - Math.abs(drawerPosition));
 }
