@@ -1,5 +1,5 @@
 {
   placeFragment=new PlaceFragment();
   mapFragment=SupportMapFragment.newInstance(new GoogleMapOptions().mapType(GoogleMap.MAP_TYPE_SATELLITE));
-  Picasso.with(this).load("http://www.hdiphonewallpapers.us/phone-wallpapers/iphone-4-wallpapers/hd-iphone-3gs-wallpapers-496ios.jpg").into(iv_drawer);
+  Picasso.with(this).load("http://www.hdiphonewallpapers.us/phone-wallpapers/iphone-4-wallpapers/hd-iphone-3gs-wallpapers-496ios.jpg").into(drawerImageView);
 }
