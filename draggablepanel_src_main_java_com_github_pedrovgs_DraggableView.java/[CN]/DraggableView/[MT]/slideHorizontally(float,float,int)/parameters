@@ -1,0 +1,3 @@
+float slideOffset
+float drawerPosition
+int width

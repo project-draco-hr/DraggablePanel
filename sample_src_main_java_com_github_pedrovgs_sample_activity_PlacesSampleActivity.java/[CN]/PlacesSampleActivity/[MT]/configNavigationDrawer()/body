@@ -1,0 +1,19 @@
+{
+  getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+  getSupportActionBar().setHomeButtonEnabled(true);
+  mDrawerLayoutLeft.setDrawerShadow(R.drawable.drawer_shadow,Gravity.LEFT);
+  drawerToggle=new ActionBarDrawerToggle(this,mDrawerLayoutLeft,R.drawable.nav_drawer,R.string.app_name,R.string.app_name){
+    @Override public void onDrawerOpened(    View drawerView){
+      super.onDrawerOpened(drawerView);
+    }
+    @Override public void onDrawerClosed(    View drawerView){
+      super.onDrawerClosed(drawerView);
+    }
+    @Override public void onDrawerSlide(    View drawerView,    float slideOffset){
+      super.onDrawerSlide(drawerView,slideOffset);
+      draggablePanel.slideHorizontally(slideOffset,ViewHelper.getX(drawerView),drawerView.getWidth());
+    }
+  }
+;
+  mDrawerLayoutLeft.setDrawerListener(drawerToggle);
+}
