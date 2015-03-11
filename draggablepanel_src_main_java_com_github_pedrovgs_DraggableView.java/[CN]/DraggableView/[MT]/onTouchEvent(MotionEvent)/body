@@ -1,4 +1,11 @@
 {
+  int actionMasked=MotionEventCompat.getActionMasked(ev);
+  if ((actionMasked & MotionEventCompat.ACTION_MASK) == MotionEvent.ACTION_DOWN) {
+    activePointerId=MotionEventCompat.getPointerId(ev,actionMasked);
+  }
+  if (activePointerId == INVALID_POINTER) {
+    return false;
+  }
   viewDragHelper.processTouchEvent(ev);
   if (isClosed()) {
     return false;
