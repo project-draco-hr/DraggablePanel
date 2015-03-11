@@ -9,8 +9,8 @@ case MotionEvent.ACTION_UP:
   return false;
 case MotionEvent.ACTION_DOWN:
 int index=MotionEventCompat.getActionIndex(ev);
-mActivePointerId=MotionEventCompat.getPointerId(ev,index);
-if (mActivePointerId == INVALID_POINTER) {
+activePointerId=MotionEventCompat.getPointerId(ev,index);
+if (activePointerId == INVALID_POINTER) {
 return false;
 }
 break;
