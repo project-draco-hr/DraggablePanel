@@ -1,6 +1,0 @@
-{
-  int dragViewId=attributes.getResourceId(R.styleable.draggable_view_top_view_id,R.id.drag_view);
-  int secondViewId=attributes.getResourceId(R.styleable.draggable_view_bottom_view_id,R.id.second_view);
-  dragView=findViewById(dragViewId);
-  secondView=findViewById(secondViewId);
-}

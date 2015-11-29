@@ -1,9 +1,8 @@
 {
   super.onFinishInflate();
   if (!isInEditMode()) {
-    mapGUI(attributes);
-    initializeTransformer(attributes);
-    attributes.recycle();
+    mapGUI();
+    initializeTransformer();
     initializeViewDragHelper();
   }
 }

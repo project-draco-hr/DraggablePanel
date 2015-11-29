@@ -1,0 +1,9 @@
+{
+  TransformerFactory transformerFactory=new TransformerFactory();
+  transformer=transformerFactory.getTransformer(topViewResize,dragView,this);
+  transformer.setViewHeight(topViewHeight);
+  transformer.setXScaleFactor(scaleFactorX);
+  transformer.setYScaleFactor(scaleFactorY);
+  transformer.setMarginRight(marginRight);
+  transformer.setMarginBottom(marginBottom);
+}

@@ -1,0 +1,4 @@
+{
+  dragView=findViewById(dragViewId);
+  secondView=findViewById(secondViewId);
+}
